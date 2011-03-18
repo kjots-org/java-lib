@@ -23,7 +23,7 @@
     <groupId>org.kjots.java-lib</groupId>
     <artifactId>kjots-org-java-lib-parent</artifactId>
     <version>99-SNAPSHOT</version>
-    <relativePath>kjots-org-java-lib-parent/pom.xml</relativePath>
+    <relativePath>parent/pom.xml</relativePath>
   </parent>
   
   <artifactId>kjots-org-java-lib</artifactId>
@@ -52,6 +52,6 @@
   </properties>
   
   <modules>
-    <module>kjots-org-java-lib-parent</module>
+    <module>parent</module>
   </modules>
 </project>

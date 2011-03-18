@@ -70,6 +70,6 @@
   <properties>
     <dir.project.kjots-org-java-lib>${basedir}/..</dir.project.kjots-org-java-lib>
     
-    <dir.module.kjots-org-java-lib-parent>${dir.project.kjots-org-java-lib}/kjots-org-java-lib-parent</dir.module.kjots-org-java-lib-parent>
+    <dir.module.parent>${dir.project.kjots-org-java-lib}/parent</dir.module.parent>
   </properties>
 </project>
