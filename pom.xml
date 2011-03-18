@@ -48,7 +48,7 @@
   </issueManagement>
   
   <properties>
-    <dir.project.kjots-org-java-lib>${basedir}</dir.project.kjots-org-java-lib>
+    <dir.project>${basedir}</dir.project>
   </properties>
   
   <modules>

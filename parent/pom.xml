@@ -45,14 +45,14 @@
     <repository>
       <id>kjots-org-java-lib</id>
       <name>kjots.org Java Library</name>
-      <url>file://${dir.project.kjots-org-java-lib}/maven/</url>
+      <url>file://${dir.project}/maven/</url>
       <layout>default</layout>
       <uniqueVersion>false</uniqueVersion>
     </repository>
     <snapshotRepository>
       <id>kjots-org-java-lib-snapshot</id>
       <name>kjots.org Java Library Snapshots</name>
-      <url>file://${dir.project.kjots-org-java-lib}/snapshots/</url>
+      <url>file://${dir.project}/snapshots/</url>
       <layout>default</layout>
       <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
@@ -68,8 +68,8 @@
   </repositories>
   
   <properties>
-    <dir.project.kjots-org-java-lib>${basedir}/..</dir.project.kjots-org-java-lib>
+    <dir.project>${basedir}/..</dir.project>
     
-    <dir.module.parent>${dir.project.kjots-org-java-lib}/parent</dir.module.parent>
+    <dir.module.parent>${dir.project}/parent</dir.module.parent>
   </properties>
 </project>
