@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright © 2011 Karl J. Ots <kjots@kjots.org>
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+      http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>org.kjots.java-lib</groupId>
+    <artifactId>kjots-org-java-lib-parent</artifactId>
+    <version>99-SNAPSHOT</version>
+    <relativePath>kjots-org-java-lib-parent/pom.xml</relativePath>
+  </parent>
+  
+  <artifactId>kjots-org-java-lib</artifactId>
+  
+  <packaging>pom</packaging>
+  
+  <name>kjots.org Java Library</name>
+  
+  <scm>
+    <connection>scm:hg:http://kjots-org-java-lib.googlecode.com/hg/</connection>
+    <developerConnection>scm:hg:https://kjots-org-java-lib.googlecode.com/hg/</developerConnection>
+    <url>http://code.google.com/p/kjots-org-java-lib/source/browse/</url>
+  </scm>
+  
+  <distributionManagement>
+    <downloadUrl>http://code.google.com/p/kjots-org-java-lib/</downloadUrl>
+  </distributionManagement>
+  
+  <issueManagement>
+    <system>Google Code</system>
+    <url>http://code.google.com/p/kjots-org-java-lib/issues/list</url>
+  </issueManagement>
+  
+  <properties>
+    <dir.project.kjots-org-java-lib>${basedir}</dir.project.kjots-org-java-lib>
+  </properties>
+  
+  <modules>
+    <module>kjots-org-java-lib-parent</module>
+  </modules>
+</project>
