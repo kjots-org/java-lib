@@ -1,4 +1,4 @@
-org.kjots.lib.common.service
-org.kjots.lib.common.service.impl
-org.kjots.lib.common.service.resource
-org.kjots.lib.common.service.resource.impl
+org.kjots.lib.common.shared.service
+org.kjots.lib.common.shared.service.impl
+org.kjots.lib.common.shared.service.resource
+org.kjots.lib.common.shared.service.resource.impl
