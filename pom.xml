@@ -62,6 +62,10 @@
     <module>parent</module>
     
     <module>common</module>
+    
+    <module>gwt/parent</module>
+    
+    <module>gwt/common</module>
   </modules>
   
   <build>

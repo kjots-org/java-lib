@@ -7,3 +7,7 @@ syntax: regexp
 ^common/eclipse-bin$
 syntax: regexp
 ^common/target$
+syntax: regexp
+^gwt/common/eclipse-bin$
+syntax: regexp
+^gwt/common/target$
