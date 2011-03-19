@@ -1,3 +1,9 @@
 
 syntax: regexp
+^target$
+syntax: regexp
 ^snapshots$
+syntax: regexp
+^common/eclipse-bin$
+syntax: regexp
+^common/target$

@@ -23,63 +23,44 @@
     <groupId>org.kjots.java-lib</groupId>
     <artifactId>kjots-org-java-lib-parent</artifactId>
     <version>99-SNAPSHOT</version>
-    <relativePath>parent/pom.xml</relativePath>
+    <relativePath>../parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-java-lib</artifactId>
+  <artifactId>kjots-org-common</artifactId>
   
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   
-  <name>kjots.org Java Library</name>
-  
-  <licenses>
-    <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-    </license>
-  </licenses>
-  
-  <scm>
-    <connection>scm:hg:http://kjots-org-java-lib.googlecode.com/hg/</connection>
-    <developerConnection>scm:hg:https://kjots-org-java-lib.googlecode.com/hg/</developerConnection>
-    <url>http://code.google.com/p/kjots-org-java-lib/source/browse/</url>
-  </scm>
-  
-  <distributionManagement>
-    <downloadUrl>http://code.google.com/p/kjots-org-java-lib/</downloadUrl>
-  </distributionManagement>
-  
-  <issueManagement>
-    <system>Google Code</system>
-    <url>http://code.google.com/p/kjots-org-java-lib/issues/list</url>
-  </issueManagement>
-  
-  <properties>
-    <dir.project>${basedir}</dir.project>
-  </properties>
-  
-  <modules>
-    <module>parent</module>
-    
-    <module>common</module>
-  </modules>
+  <name>kjots.org Common</name>
   
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.1.2</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.7</version>
         <configuration>
-          <reportOutputDirectory>doc</reportOutputDirectory>
-          <destDir>api</destDir>
+          <destDir>doc/api</destDir>
           <notimestamp>true</notimestamp>
         </configuration>
         <executions>
           <execution>
-            <phase>install</phase>
+            <phase>package</phase>
             <goals>
-              <goal>aggregate</goal>
+              <goal>jar</goal>
             </goals>
           </execution>
         </executions>
