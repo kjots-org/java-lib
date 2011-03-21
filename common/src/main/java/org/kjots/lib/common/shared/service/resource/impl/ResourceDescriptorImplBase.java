@@ -45,7 +45,6 @@ public abstract class ResourceDescriptorImplBase implements ResourceDescriptor, 
     return this.parentDescriptor;
   }
 
-  
   /**
    * Determine if this object is equal to the given object.
    *
@@ -53,18 +52,8 @@ public abstract class ResourceDescriptorImplBase implements ResourceDescriptor, 
    * @return <code>true<code> if this object is equal to the given object.
    */
   @Override
-  public boolean equals(Object object) {
-    if (object == this) {
-      return true;
-    }
-    else if (object instanceof ResourceDescriptor) {
-      ResourceDescriptor that = (ResourceDescriptor)object;
-      
-      return this.getResourceUriScheme().equals(that.getResourceUriScheme());
-    }
-    else {
-      return false;
-    }
+  public final boolean equals(Object object) {
+    return Util.equals(this, object);
   }
   
   /**
@@ -73,8 +62,8 @@ public abstract class ResourceDescriptorImplBase implements ResourceDescriptor, 
    * @return The hash code.
    */
   @Override
-  public int hashCode() {
-    return 629 * this.getResourceUriScheme().hashCode();
+  public final int hashCode() {
+    return Util.hashCode(this);
   }
   
   /**
@@ -83,8 +72,8 @@ public abstract class ResourceDescriptorImplBase implements ResourceDescriptor, 
    * @return The string representation of this object. 
    */
   @Override
-  public String toString() {
-    return this.getResourceUriScheme();
+  public final String toString() {
+    return Util.toString(this);
   }
 
   /**
