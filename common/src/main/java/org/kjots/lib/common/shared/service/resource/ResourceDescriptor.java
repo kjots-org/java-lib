@@ -32,7 +32,8 @@ public interface ResourceDescriptor {
       else if (object instanceof ResourceDescriptor) {
         ResourceDescriptor that = (ResourceDescriptor)object;
         
-        return resourceDescriptor.getResourceUriScheme().equals(that.getResourceUriScheme());
+        return resourceDescriptor.getResourceUriScheme().equals(that.getResourceUriScheme()) &&
+               (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().equals(that.getParentDescriptor()) : that.getParentDescriptor() == null);
       }
       else {
         return false;
@@ -46,7 +47,12 @@ public interface ResourceDescriptor {
      * @return The hash code.
      */
     public static int hashCode(ResourceDescriptor resourceDescriptor) {
-      return 629 * resourceDescriptor.getResourceUriScheme().hashCode();
+      int hashCode = 17;
+      
+      hashCode = hashCode * 37 + resourceDescriptor.getResourceUriScheme().hashCode();
+      hashCode = hashCode * 37 + (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().hashCode() : 0);
+      
+      return hashCode;
     }
     
     /**
@@ -56,7 +62,7 @@ public interface ResourceDescriptor {
      * @return The string representation.
      */
     public static String toString(ResourceDescriptor resourceDescriptor) {
-      return resourceDescriptor.getResourceUriScheme();
+      return (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().toString() + "::" : "") + resourceDescriptor.getResourceUriScheme();
     }
   }
   
