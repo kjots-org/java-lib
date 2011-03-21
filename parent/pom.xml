@@ -66,19 +66,26 @@
     <dir.module.parent>${dir.project}/parent</dir.module.parent>
     
     <dir.module.common>${dir.project}/common</dir.module.common>
+    
+    <version.junit>4.8.2</version.junit>
+    <version.mockito>1.8.0</version.mockito>
+    
+    <version.plugin.maven-surefire>2.7.1</version.plugin.maven-surefire>
+    <version.plugin.maven-source>2.1.2</version.plugin.maven-source>
+    <version.plugin.maven-javadoc>2.7</version.plugin.maven-javadoc>
   </properties>
   
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.2</version>
+      <version>${version.junit}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-all</artifactId>
-      <version>1.8.0</version>
+      <version>${version.mockito}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

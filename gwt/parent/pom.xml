@@ -37,21 +37,22 @@
     
     <dir.module.gwt.parent>${dir.project}/gwt/parent</dir.module.gwt.parent>
     
-    <gwt.sdk.version>2.2.0</gwt.sdk.version>
-    <gwt.plugin.version>2.2.0</gwt.plugin.version>
+    <version.gwt>2.2.0</version.gwt>
+    
+    <version.plugin.gwt>2.2.0</version.plugin.gwt>
   </properties>
   
   <dependencies>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-user</artifactId>
-      <version>${gwt.sdk.version}</version>
+      <version>${version.gwt}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-servlet</artifactId>
-      <version>${gwt.sdk.version}</version>
+      <version>${version.gwt}</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
