@@ -19,8 +19,6 @@ import org.kjots.lib.common.shared.service.resource.impl.ResourceServiceImplTest
  */
 @RunWith(Suite.class)
 @SuiteClasses({
-  ResourceDescriptorTest.class,
-  
   ResourceServiceImplTestSuite.class
 })
 public class ResourceServiceTestSuite {
