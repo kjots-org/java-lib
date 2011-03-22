@@ -8,23 +8,45 @@ import java.io.Serializable;
 import org.kjots.lib.common.shared.service.resource.ResourceDescriptor;
 
 /**
- * Resource Descriptor Implementation Base.
+ * Resource Descriptor Implementation.
  * <p>
  * Created: 21st March 2011.
  *
  * @author <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>
  * @since 99-SNAPSHOT
  */
-public abstract class ResourceDescriptorImplBase implements ResourceDescriptor, Serializable {
+public class ResourceDescriptorImpl implements ResourceDescriptor, Serializable {
   /** The serial version UID. */
-  private static final long serialVersionUID = 6927249740786688383L;
-  
+  private static final long serialVersionUID = -2546185743187763294L;
+
   /** The resource URI scheme. */
   private final String resourceUriScheme;
   
   /** The parent resource descriptor. */
   private final ResourceDescriptor parentDescriptor;
   
+  /**
+   * Construct a new Resource Descriptor Implementation.
+   *
+   * @param resourceUriScheme The resource URI scheme.
+   */
+  public ResourceDescriptorImpl(String resourceUriScheme) {
+    this(resourceUriScheme, null);
+  }
+
+  /**
+   * Construct a new Resource Descriptor Implementation.
+   *
+   * @param resourceUriScheme The resource URI scheme.
+   * @param parentDescriptor The parent resource descriptor.
+   */
+  public ResourceDescriptorImpl(String resourceUriScheme, ResourceDescriptor parentDescriptor) {
+    if (resourceUriScheme == null || resourceUriScheme.isEmpty()) throw new IllegalArgumentException("resourceUriScheme cannot be null or empty");
+    
+    this.resourceUriScheme = resourceUriScheme;
+    this.parentDescriptor = parentDescriptor;
+  }
+
   /**
    * Retrieve the resource URI scheme.
    *
@@ -74,18 +96,5 @@ public abstract class ResourceDescriptorImplBase implements ResourceDescriptor, 
   @Override
   public final String toString() {
     return Util.toString(this);
-  }
-
-  /**
-   * Construct a new Resource Descriptor Implementation Base.
-   *
-   * @param resourceUriScheme The resource URI scheme.
-   * @param parentDescriptor The parent resource descriptor.
-   */
-  protected ResourceDescriptorImplBase(String resourceUriScheme, ResourceDescriptor parentDescriptor) {
-    if (resourceUriScheme == null || resourceUriScheme.isEmpty()) throw new IllegalArgumentException("resourceUriScheme cannot be null or empty"); 
-    
-    this.resourceUriScheme = resourceUriScheme;
-    this.parentDescriptor = parentDescriptor;
   }
 }

@@ -18,7 +18,7 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({
   ResourceServiceImplBaseTest.class,
-  ResourceDescriptorImplBaseTest.class
+  ResourceDescriptorImplTest.class
 })
 public class ResourceServiceImplTestSuite {
 }

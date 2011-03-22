@@ -67,13 +67,6 @@ public interface ResourceDescriptor {
   }
   
   /**
-   * Retrieve the resource service.
-   *
-   * @return The resource service.
-   */
-  public ResourceService getResourceService();
-
-  /**
    * Retrieve the resource URI scheme.
    *
    * @return The resource URI scheme.

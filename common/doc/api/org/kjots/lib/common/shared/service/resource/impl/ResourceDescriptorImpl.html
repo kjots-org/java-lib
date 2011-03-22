@@ -4,7 +4,7 @@
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <TITLE>
-ResourceDescriptorImplBase (kjots.org Java Library 99-SNAPSHOT API)
+ResourceDescriptorImpl (kjots.org Common 99-SNAPSHOT API)
 </TITLE>
 
 
@@ -14,7 +14,7 @@ ResourceDescriptorImplBase (kjots.org Java Library 99-SNAPSHOT API)
 function windowTitle()
 {
     if (location.href.indexOf('is-external=true') == -1) {
-        parent.document.title="ResourceDescriptorImplBase (kjots.org Java Library 99-SNAPSHOT API)";
+        parent.document.title="ResourceDescriptorImpl (kjots.org Common 99-SNAPSHOT API)";
     }
 }
 </SCRIPT>
@@ -39,7 +39,7 @@ function windowTitle()
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
-  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResourceDescriptorImplBase.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResourceDescriptorImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
@@ -57,8 +57,8 @@ function windowTitle()
 &nbsp;PREV CLASS&nbsp;
 &nbsp;<A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceServiceImplBase.html" title="class in org.kjots.lib.common.shared.service.resource.impl"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../../../../index.html?org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html" target="_top"><B>FRAMES</B></A>  &nbsp;
-&nbsp;<A HREF="ResourceDescriptorImplBase.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../../../../index.html?org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ResourceDescriptorImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
   if(window==top) {
@@ -89,21 +89,21 @@ DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&n
 <FONT SIZE="-1">
 org.kjots.lib.common.shared.service.resource.impl</FONT>
 <BR>
-Class ResourceDescriptorImplBase</H2>
+Class ResourceDescriptorImpl</H2>
 <PRE>
 <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
-  <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.kjots.lib.common.shared.service.resource.impl.ResourceDescriptorImplBase</B>
+  <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.kjots.lib.common.shared.service.resource.impl.ResourceDescriptorImpl</B>
 </PRE>
 <DL>
 <DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://java.sun.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></DD>
 </DL>
 <HR>
 <DL>
-<DT><PRE>public abstract class <B>ResourceDescriptorImplBase</B><DT>extends <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
+<DT><PRE>public class <B>ResourceDescriptorImpl</B><DT>extends <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A></DL>
 </PRE>
 
 <P>
-Resource Descriptor Implementation Base.
+Resource Descriptor Implementation.
  <p>
  Created: 21st March 2011.
 <P>
@@ -114,7 +114,7 @@ Resource Descriptor Implementation Base.
   <DD>99-SNAPSHOT</DD>
 <DT><B>Author:</B></DT>
   <DD><a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a></DD>
-<DT><B>See Also:</B><DD><A HREF="../../../../../../../../serialized-form.html#org.kjots.lib.common.shared.service.resource.impl.ResourceDescriptorImplBase">Serialized Form</A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../serialized-form.html#org.kjots.lib.common.shared.service.resource.impl.ResourceDescriptorImpl">Serialized Form</A></DL>
 <HR>
 
 <P>
@@ -147,13 +147,17 @@ Resource Descriptor Implementation Base.
 <B>Constructor Summary</B></FONT></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>protected </CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html#ResourceDescriptorImplBase(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)">ResourceDescriptorImplBase</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
-                           <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#ResourceDescriptorImpl(java.lang.String)">ResourceDescriptorImpl</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new Resource Descriptor Implementation Base.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new Resource Descriptor Implementation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#ResourceDescriptorImpl(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)">ResourceDescriptorImpl</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
+                       <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new Resource Descriptor Implementation.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -168,7 +172,7 @@ Resource Descriptor Implementation Base.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;boolean</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;object)</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;object)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Determine if this object is equal to the given object.</TD>
@@ -176,7 +180,7 @@ Resource Descriptor Implementation Base.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;<A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html#getParentDescriptor()">getParentDescriptor</A></B>()</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#getParentDescriptor()">getParentDescriptor</A></B>()</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the parent resource descriptor.</TD>
@@ -184,7 +188,7 @@ Resource Descriptor Implementation Base.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html#getResourceUriScheme()">getResourceUriScheme</A></B>()</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#getResourceUriScheme()">getResourceUriScheme</A></B>()</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the resource URI scheme.</TD>
@@ -192,7 +196,7 @@ Resource Descriptor Implementation Base.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;int</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html#hashCode()">hashCode</A></B>()</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#hashCode()">hashCode</A></B>()</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calculate the hash code for this object.</TD>
@@ -200,7 +204,7 @@ Resource Descriptor Implementation Base.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html#toString()">toString</A></B>()</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#toString()">toString</A></B>()</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a string representation of this object.</TD>
@@ -213,15 +217,6 @@ Resource Descriptor Implementation Base.
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD><CODE><A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
-</TR>
-</TABLE>
-&nbsp;<A NAME="methods_inherited_from_class_org.kjots.lib.common.shared.service.resource.ResourceDescriptor"><!-- --></A>
-<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
-<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
-<TH ALIGN="left"><B>Methods inherited from interface org.kjots.lib.common.shared.service.resource.<A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></B></TH>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html#getResourceService()">getResourceService</A></CODE></TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -237,13 +232,25 @@ Resource Descriptor Implementation Base.
 </TR>
 </TABLE>
 
-<A NAME="ResourceDescriptorImplBase(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)"><!-- --></A><H3>
-ResourceDescriptorImplBase</H3>
+<A NAME="ResourceDescriptorImpl(java.lang.String)"><!-- --></A><H3>
+ResourceDescriptorImpl</H3>
 <PRE>
-protected <B>ResourceDescriptorImplBase</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
-                                     <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</PRE>
+public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme)</PRE>
 <DL>
-<DD>Construct a new Resource Descriptor Implementation Base.
+<DD>Construct a new Resource Descriptor Implementation.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>resourceUriScheme</CODE> - The resource URI scheme.</DL>
+</DL>
+<HR>
+
+<A NAME="ResourceDescriptorImpl(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)"><!-- --></A><H3>
+ResourceDescriptorImpl</H3>
+<PRE>
+public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
+                              <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</PRE>
+<DL>
+<DD>Construct a new Resource Descriptor Implementation.
 <P>
 <DL>
 <DT><B>Parameters:</B><DD><CODE>resourceUriScheme</CODE> - The resource URI scheme.<DD><CODE>parentDescriptor</CODE> - The parent resource descriptor.</DL>
@@ -358,7 +365,7 @@ public final <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.htm
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
-  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResourceDescriptorImplBase.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResourceDescriptorImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
   <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
@@ -376,8 +383,8 @@ public final <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.htm
 &nbsp;PREV CLASS&nbsp;
 &nbsp;<A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceServiceImplBase.html" title="class in org.kjots.lib.common.shared.service.resource.impl"><B>NEXT CLASS</B></A></FONT></TD>
 <TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
-  <A HREF="../../../../../../../../index.html?org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImplBase.html" target="_top"><B>FRAMES</B></A>  &nbsp;
-&nbsp;<A HREF="ResourceDescriptorImplBase.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+  <A HREF="../../../../../../../../index.html?org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ResourceDescriptorImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
 &nbsp;<SCRIPT type="text/javascript">
   <!--
   if(window==top) {
