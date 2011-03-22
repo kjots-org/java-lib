@@ -3,16 +3,7 @@
  */
 package org.kjots.lib.common.shared.service.resource.impl;
 
-import static org.junit.Assert.assertSame;
-import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
 import org.junit.Before;
-import org.junit.Test;
 
 import org.kjots.lib.common.CommonTestBase;
 import org.kjots.lib.common.shared.service.resource.ResourceDescriptor;
@@ -31,19 +22,17 @@ public class ResourceServiceImplBaseTest extends CommonTestBase {
    */
   public static class DummyResourceServiceImplBase extends ResourceServiceImplBase {
     /**
-     * Create a resource descriptor.
+     * Install the given resource descriptor.
      *
-     * @param resourceUriScheme The resource URI scheme.
-     * @param parentDescriptor The parent resource descriptor.
-     * @return The resource descriptor.
+     * @param resourceDescriptor The resource descriptor.
      */
     @Override
-    public ResourceDescriptor createResourceDescriptor(String resourceUriScheme, ResourceDescriptor parentDescriptor) {
-      return null;
+    public void installResourceDescriptor(ResourceDescriptor resourceDescriptor) {
     }
   }
   
   /** The test resource service implementation base. */
+  @SuppressWarnings("unused")
   private ResourceServiceImplBase testResourceServiceImplBase;
   
   /**
@@ -52,28 +41,5 @@ public class ResourceServiceImplBaseTest extends CommonTestBase {
   @Before
   public void setup() {
     this.testResourceServiceImplBase = new DummyResourceServiceImplBase();
-  }
-  
-  /**
-   * Test the {@link ResourceServiceImplBase#createResourceDescriptor(String)} method.
-   * <p>
-   * This test asserts that the {@link ResourceServiceImplBase#createResourceDescriptor(String)}
-   * method invokes the {@link ResourceServiceImplBase#createResourceDescriptor(String, ResourceDescriptor)}
-   * method with the given argument and <code>null</code> parent resource
-   * descriptor and returns the resulting resource descriptor.
-   */
-  @Test
-  public void testCreateResourceDescriptorWithResourceUriScheme() {
-    ResourceServiceImplBase testResourceServiceImplBase = spy(this.testResourceServiceImplBase);
-    
-    ResourceDescriptor mockResourceDescriptor = mock(ResourceDescriptor.class);
-    
-    when(testResourceServiceImplBase.createResourceDescriptor(anyString(), (ResourceDescriptor)any())).thenReturn(mockResourceDescriptor);
-    
-    ResourceDescriptor resourceDescriptor = testResourceServiceImplBase.createResourceDescriptor("testResourceUriScheme");
-    
-    verify(testResourceServiceImplBase).createResourceDescriptor("testResourceUriScheme", null);
-    
-    assertSame(mockResourceDescriptor, resourceDescriptor);
   }
 }

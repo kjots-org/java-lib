@@ -128,20 +128,11 @@ Resource Service.
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceService.html#createResourceDescriptor(java.lang.String)">createResourceDescriptor</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme)</CODE>
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceService.html#installResourceDescriptor(org.kjots.lib.common.shared.service.resource.ResourceDescriptor)">installResourceDescriptor</A></B>(<A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;resourceDescriptor)</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a resource descriptor.</TD>
-</TR>
-<TR BGCOLOR="white" CLASS="TableRowColor">
-<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceService.html#createResourceDescriptor(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)">createResourceDescriptor</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
-                         <A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</CODE>
-
-<BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a resource descriptor.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Install the given resource descriptor.</TD>
 </TR>
 </TABLE>
 &nbsp;
@@ -157,43 +148,18 @@ Resource Service.
 </TR>
 </TABLE>
 
-<A NAME="createResourceDescriptor(java.lang.String)"><!-- --></A><H3>
-createResourceDescriptor</H3>
+<A NAME="installResourceDescriptor(org.kjots.lib.common.shared.service.resource.ResourceDescriptor)"><!-- --></A><H3>
+installResourceDescriptor</H3>
 <PRE>
-<A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A> <B>createResourceDescriptor</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme)</PRE>
+void <B>installResourceDescriptor</B>(<A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;resourceDescriptor)</PRE>
 <DL>
-<DD>Create a resource descriptor.
- <p>
- This method will throw an <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang"><CODE>IllegalArgumentException</CODE></A> if the given
- resource URI scheme is <code>null</code> or empty.
+<DD>Install the given resource descriptor.
 <P>
 <DD><DL>
 </DL>
 </DD>
 <DD><DL>
-<DT><B>Parameters:</B><DD><CODE>resourceUriScheme</CODE> - The resource URI scheme.
-<DT><B>Returns:</B><DD>The resource descriptor.</DL>
-</DD>
-</DL>
-<HR>
-
-<A NAME="createResourceDescriptor(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)"><!-- --></A><H3>
-createResourceDescriptor</H3>
-<PRE>
-<A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A> <B>createResourceDescriptor</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
-                                            <A HREF="../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</PRE>
-<DL>
-<DD>Create a resource descriptor.
- <p>
- This method will throw an <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang"><CODE>IllegalArgumentException</CODE></A> if the given
- resource URI scheme is <code>null</code> or empty.
-<P>
-<DD><DL>
-</DL>
-</DD>
-<DD><DL>
-<DT><B>Parameters:</B><DD><CODE>resourceUriScheme</CODE> - The resource URI scheme.<DD><CODE>parentDescriptor</CODE> - The parent resource descriptor.
-<DT><B>Returns:</B><DD>The resource descriptor.</DL>
+<DT><B>Parameters:</B><DD><CODE>resourceDescriptor</CODE> - The resource descriptor.</DL>
 </DD>
 </DL>
 <!-- ========= END OF CLASS DATA ========= -->
