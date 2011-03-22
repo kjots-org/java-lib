@@ -147,13 +147,13 @@ Resource Descriptor Implementation.
 <B>Constructor Summary</B></FONT></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#ResourceDescriptorImpl(java.lang.String)">ResourceDescriptorImpl</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme)</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#ResourceDescriptorImpl(java.lang.String)">ResourceDescriptorImpl</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceType)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct a new Resource Descriptor Implementation.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#ResourceDescriptorImpl(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)">ResourceDescriptorImpl</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#ResourceDescriptorImpl(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)">ResourceDescriptorImpl</A></B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceType,
                        <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</CODE>
 
 <BR>
@@ -188,10 +188,10 @@ Resource Descriptor Implementation.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#getResourceUriScheme()">getResourceUriScheme</A></B>()</CODE>
+<TD><CODE><B><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/impl/ResourceDescriptorImpl.html#getResourceType()">getResourceType</A></B>()</CODE>
 
 <BR>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the resource URI scheme.</TD>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the resource type.</TD>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
@@ -235,25 +235,25 @@ Resource Descriptor Implementation.
 <A NAME="ResourceDescriptorImpl(java.lang.String)"><!-- --></A><H3>
 ResourceDescriptorImpl</H3>
 <PRE>
-public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme)</PRE>
+public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceType)</PRE>
 <DL>
 <DD>Construct a new Resource Descriptor Implementation.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>resourceUriScheme</CODE> - The resource URI scheme.</DL>
+<DT><B>Parameters:</B><DD><CODE>resourceType</CODE> - The resource type.</DL>
 </DL>
 <HR>
 
 <A NAME="ResourceDescriptorImpl(java.lang.String, org.kjots.lib.common.shared.service.resource.ResourceDescriptor)"><!-- --></A><H3>
 ResourceDescriptorImpl</H3>
 <PRE>
-public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceUriScheme,
+public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;resourceType,
                               <A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A>&nbsp;parentDescriptor)</PRE>
 <DL>
 <DD>Construct a new Resource Descriptor Implementation.
 <P>
 <DL>
-<DT><B>Parameters:</B><DD><CODE>resourceUriScheme</CODE> - The resource URI scheme.<DD><CODE>parentDescriptor</CODE> - The parent resource descriptor.</DL>
+<DT><B>Parameters:</B><DD><CODE>resourceType</CODE> - The resource type.<DD><CODE>parentDescriptor</CODE> - The parent resource descriptor.</DL>
 </DL>
 
 <!-- ============ METHOD DETAIL ========== -->
@@ -266,19 +266,19 @@ public <B>ResourceDescriptorImpl</B>(<A HREF="http://java.sun.com/javase/6/docs/
 </TR>
 </TABLE>
 
-<A NAME="getResourceUriScheme()"><!-- --></A><H3>
-getResourceUriScheme</H3>
+<A NAME="getResourceType()"><!-- --></A><H3>
+getResourceType</H3>
 <PRE>
-public <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getResourceUriScheme</B>()</PRE>
+public <A HREF="http://java.sun.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getResourceType</B>()</PRE>
 <DL>
-<DD>Retrieve the resource URI scheme.
+<DD>Retrieve the resource type.
 <P>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html#getResourceUriScheme()">getResourceUriScheme</A></CODE> in interface <CODE><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html#getResourceType()">getResourceType</A></CODE> in interface <CODE><A HREF="../../../../../../../../org/kjots/lib/common/shared/service/resource/ResourceDescriptor.html" title="interface in org.kjots.lib.common.shared.service.resource">ResourceDescriptor</A></CODE></DL>
 </DD>
 <DD><DL>
 
-<DT><B>Returns:</B><DD>The resource URI scheme.</DL>
+<DT><B>Returns:</B><DD>The resource type.</DL>
 </DD>
 </DL>
 <HR>

@@ -32,7 +32,7 @@ public interface ResourceDescriptor {
       else if (object instanceof ResourceDescriptor) {
         ResourceDescriptor that = (ResourceDescriptor)object;
         
-        return resourceDescriptor.getResourceUriScheme().equals(that.getResourceUriScheme()) &&
+        return resourceDescriptor.getResourceType().equals(that.getResourceType()) &&
                (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().equals(that.getParentDescriptor()) : that.getParentDescriptor() == null);
       }
       else {
@@ -49,7 +49,7 @@ public interface ResourceDescriptor {
     public static int hashCode(ResourceDescriptor resourceDescriptor) {
       int hashCode = 17;
       
-      hashCode = hashCode * 37 + resourceDescriptor.getResourceUriScheme().hashCode();
+      hashCode = hashCode * 37 + resourceDescriptor.getResourceType().hashCode();
       hashCode = hashCode * 37 + (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().hashCode() : 0);
       
       return hashCode;
@@ -62,16 +62,16 @@ public interface ResourceDescriptor {
      * @return The string representation.
      */
     public static String toString(ResourceDescriptor resourceDescriptor) {
-      return (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().toString() + "::" : "") + resourceDescriptor.getResourceUriScheme();
+      return (resourceDescriptor.getParentDescriptor() != null ? resourceDescriptor.getParentDescriptor().toString() + "::" : "") + resourceDescriptor.getResourceType();
     }
   }
   
   /**
-   * Retrieve the resource URI scheme.
+   * Retrieve the resource type.
    *
-   * @return The resource URI scheme.
+   * @return The resource type.
    */
-  public String getResourceUriScheme();
+  public String getResourceType();
 
   /**
    * Retrieve the parent resource descriptor.

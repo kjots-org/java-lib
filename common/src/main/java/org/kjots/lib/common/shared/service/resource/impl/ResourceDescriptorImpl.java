@@ -17,10 +17,10 @@ import org.kjots.lib.common.shared.service.resource.ResourceDescriptor;
  */
 public class ResourceDescriptorImpl implements ResourceDescriptor, Serializable {
   /** The serial version UID. */
-  private static final long serialVersionUID = -2546185743187763294L;
+  private static final long serialVersionUID = 2489599678177967467L;
 
-  /** The resource URI scheme. */
-  private final String resourceUriScheme;
+  /** The resource type. */
+  private final String resourceType;
   
   /** The parent resource descriptor. */
   private final ResourceDescriptor parentDescriptor;
@@ -28,33 +28,33 @@ public class ResourceDescriptorImpl implements ResourceDescriptor, Serializable 
   /**
    * Construct a new Resource Descriptor Implementation.
    *
-   * @param resourceUriScheme The resource URI scheme.
+   * @param resourceType The resource type.
    */
-  public ResourceDescriptorImpl(String resourceUriScheme) {
-    this(resourceUriScheme, null);
+  public ResourceDescriptorImpl(String resourceType) {
+    this(resourceType, null);
   }
 
   /**
    * Construct a new Resource Descriptor Implementation.
    *
-   * @param resourceUriScheme The resource URI scheme.
+   * @param resourceType The resource type.
    * @param parentDescriptor The parent resource descriptor.
    */
-  public ResourceDescriptorImpl(String resourceUriScheme, ResourceDescriptor parentDescriptor) {
-    if (resourceUriScheme == null || resourceUriScheme.isEmpty()) throw new IllegalArgumentException("resourceUriScheme cannot be null or empty");
+  public ResourceDescriptorImpl(String resourceType, ResourceDescriptor parentDescriptor) {
+    if (resourceType == null || resourceType.isEmpty()) throw new IllegalArgumentException("resourceType cannot be null or empty");
     
-    this.resourceUriScheme = resourceUriScheme;
+    this.resourceType = resourceType;
     this.parentDescriptor = parentDescriptor;
   }
 
   /**
-   * Retrieve the resource URI scheme.
+   * Retrieve the resource type.
    *
-   * @return The resource URI scheme.
+   * @return The resource type.
    */
   @Override
-  public String getResourceUriScheme() {
-    return this.resourceUriScheme;
+  public String getResourceType() {
+    return this.resourceType;
   }
 
   /**

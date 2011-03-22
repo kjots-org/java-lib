@@ -23,7 +23,7 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
    * constructor throws an {@link IllegalArgumentException} when provided with
-   * a <code>null</code> resource URI scheme.
+   * a <code>null</code> resource type.
    */
   @Test(expected = IllegalArgumentException.class)
   public void testOneArgConstructorWithNullResourceUriScheme() {
@@ -36,7 +36,7 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
    * constructor throws an {@link IllegalArgumentException} when provided with
-   * an empty resource URI scheme.
+   * an empty resource type.
    */
   @Test(expected = IllegalArgumentException.class)
   public void testOneArgConstructorWithEmptyResourceUriScheme() {
@@ -49,7 +49,7 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
    * constructor throws an {@link IllegalArgumentException} when provided with
-   * a <code>null</code> resource URI scheme.
+   * a <code>null</code> resource type.
    */
   @Test(expected = IllegalArgumentException.class)
   public void testTwoArgConstructorWithNullResourceUriScheme() {
@@ -62,7 +62,7 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
    * constructor throws an {@link IllegalArgumentException} when provided with
-   * an empty resource URI scheme.
+   * an empty resource type.
    */
   @Test(expected = IllegalArgumentException.class)
   public void testTwoArgConstructorWithEmptyResourceUriScheme() {
