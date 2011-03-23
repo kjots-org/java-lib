@@ -20,6 +20,8 @@ package org.kjots.lib.common.gwt.client.org.apache.harmony.luni.tests.java.net;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import com.google.gwt.core.client.GWT;
+
 import org.kjots.lib.common.gwt.client.CommonGwtTestBase;
 
 /**
@@ -29,6 +31,7 @@ import org.kjots.lib.common.gwt.client.CommonGwtTestBase;
  * <li>Renamed to URIGwtTest</li>
  * <li>Updated to extend org.kjots.lib.common.gwt.client.CommonGwtTestBase</li>
  * <li>Updated test_fiveArgConstructor() method to remove tests that do not fail for standard java.net.URI</li> 
+ * <li>Updated test_compareToLjava_lang_Object() method for different expected results in development and production modes</li>
  * <li>Added @SuppressWarnings("unused") annotation</li>
  * <li>Removed test_toURL() and testSerializationSelf() methods</li>
  * </ul>
@@ -586,9 +589,17 @@ public class URIGwtTest extends CommonGwtTestBase {
                 { "http://www.google.com", "#test" } // miscellaneous
         };
 
-        int[] compareToResults = { 1, -1, 2, 0, 0, 0, 1, -1, 0, 32, -3, -3, 0,
-                3, -4, -1, 1, 0, 1, 8, -10, -12, -81, -1, -1, 6, 1, -1, 0, 1,
-                -1, 0, 1, 1, };
+        int[] compareToResults;
+        if (GWT.isProdMode()) {
+            compareToResults = new int[] { 1, -1, 1, 0, 0, 0, 1, -1, 0, 1, -1, -1, 0,
+                    1, -1, -1, 1, 0, 1, 1, -1, -1, -81, -1, -1, 1, 1, -1, 0, 1,
+                    -1, 0, 1, 1, };
+        }
+        else {
+          compareToResults = new int[] { 1, -1, 2, 0, 0, 0, 1, -1, 0, 32, -3, -3, 0,
+                  3, -4, -1, 1, 0, 1, 8, -10, -12, -81, -1, -1, 6, 1, -1, 0, 1,
+                  -1, 0, 1, 1, };
+        }
 
         // test compareTo functionality
         for (int i = 0; i < compareToResults.length; i++) {

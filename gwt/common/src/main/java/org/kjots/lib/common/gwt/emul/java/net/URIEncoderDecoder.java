@@ -30,15 +30,16 @@ import com.google.gwt.http.client.URL;
  * Modified for use in <em>GWT</em> by <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>:
  * <ul>
  * <li>Inlined messages and removed NON-NLS directives</li>
+ * <li>Updated encoding field to be "UTF-8" instead of "UTF8"</li>
  * <li>Copied isSpaceChar() and isISOControl() methods from java.lang.Character</li>
- * <li>Updated decode() method to delegate to com.google.gwt.http.client.URL.decode()</li>
+ * <li>Updated decode() method to delegate to com.google.gwt.http.client.URL.decodePathSegment()</li>
  * </ul>
  */
 class URIEncoderDecoder {
 
     static final String digits = "0123456789ABCDEF";
 
-    static final String encoding = "UTF8";
+    static final String encoding = "UTF-8";
 
     /**
      * Validate a string by checking if it contains any characters other than:
@@ -184,7 +185,7 @@ class URIEncoderDecoder {
      * @return java.lang.String The decoded version.
      */
     static String decode(String s) throws UnsupportedEncodingException {
-        return URL.decode(s);
+        return URL.decodePathSegment(s);
     }
     
     /**

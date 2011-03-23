@@ -26,8 +26,8 @@
 <module>
   <inherits name="com.google.gwt.user.User"/>
   
-  <inherits name="org.kjots.lib.common.gwt.emul.Emulation"/>
-  
   <source path="shared"/>
   <source path="gwt/client"/>
+  
+  <super-source path="gwt/emul"/>
 </module>
