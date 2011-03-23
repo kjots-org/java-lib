@@ -20,6 +20,11 @@ package java.net;
 /**
  * A {@code URISyntaxException} will be thrown if some information could not be parsed
  * while creating a URI.
+ * 
+ * Modified for use in <em>GWT</em> by <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>:
+ * <ul>
+ * <li>Inlined messages and removed NON-NLS directives</li>
+ * </ul>
  */
 public class URISyntaxException extends Exception {
 
@@ -125,10 +130,8 @@ public class URISyntaxException extends Exception {
         String reason = super.getMessage();
 
         if (index != -1) {
-            return reason + " at index " + Integer.toString(index) + ": " + input //$NON-NLS-1$
-                    ;
+            return reason + " at index " + Integer.toString(index) + ": " + input;
         }
-        return reason + ": " + input //$NON-NLS-1$
-                ;
+        return reason + ": " + input;
     }
 }

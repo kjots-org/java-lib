@@ -26,12 +26,19 @@ import com.google.gwt.http.client.URL;
  * application/x-www-form-urlencoded} MIME content type. It contains helper
  * methods used by the URI class, and performs encoding and decoding in a
  * slightly different way than {@code URLEncoder} and {@code URLDecoder}.
+ * 
+ * Modified for use in <em>GWT</em> by <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>:
+ * <ul>
+ * <li>Inlined messages and removed NON-NLS directives</li>
+ * <li>Copied isSpaceChar() and isISOControl() methods from java.lang.Character</li>
+ * <li>Updated decode() method to delegate to com.google.gwt.http.client.URL.decode()</li>
+ * </ul>
  */
 class URIEncoderDecoder {
 
-    static final String digits = "0123456789ABCDEF"; //$NON-NLS-1$
+    static final String digits = "0123456789ABCDEF";
 
-    static final String encoding = "UTF8"; //$NON-NLS-1$
+    static final String encoding = "UTF8";
 
     /**
      * Validate a string by checking if it contains any characters other than:
@@ -53,14 +60,12 @@ class URIEncoderDecoder {
             if (ch == '%') {
                 do {
                     if (i + 2 >= s.length()) {
-                        throw new URISyntaxException(s, "Incomplete % sequence", //$NON-NLS-1$
-                                i);
+                        throw new URISyntaxException(s, "Incomplete % sequence", i);
                     }
                     int d1 = Character.digit(s.charAt(i + 1), 16);
                     int d2 = Character.digit(s.charAt(i + 2), 16);
                     if (d1 == -1 || d2 == -1) {
-                        throw new URISyntaxException(s, "Invalid % sequence (" + s.substring(i, i + 3) + ")", //$NON-NLS-1$
-                                i);
+                        throw new URISyntaxException(s, "Invalid % sequence (" + s.substring(i, i + 3) + ")", i);
                     }
 
                     i += 3;
@@ -71,7 +76,7 @@ class URIEncoderDecoder {
             if (!((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
                     || (ch >= '0' && ch <= '9') || legal.indexOf(ch) > -1 || (ch > 127
                         && !isSpaceChar(ch) && !isISOControl(ch)))) {
-                throw new URISyntaxException(s, "Illegal character", i); //$NON-NLS-1$
+                throw new URISyntaxException(s, "Illegal character", i);
             }
             i++;
         }
@@ -83,7 +88,7 @@ class URIEncoderDecoder {
             char ch = s.charAt(i);
             if (!((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
                     || (ch >= '0' && ch <= '9') || legal.indexOf(ch) > -1)) {
-                throw new URISyntaxException(s, "Illegal character", i); //$NON-NLS-1$
+                throw new URISyntaxException(s, "Illegal character", i);
             }
             i++;
         }
