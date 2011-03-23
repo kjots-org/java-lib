@@ -37,7 +37,7 @@ class URIEncoderDecoder {
      * Validate a string by checking if it contains any characters other than:
      * 1. letters ('a'..'z', 'A'..'Z') 2. numbers ('0'..'9') 3. characters in
      * the legalset parameter 4. others (unicode characters that are not in
-     * US-ASCII set)
+     * US-ASCII set, and are not ISO Control or are not ISO Space characters)
      * <p>
      * called from {@code URI.Helper.parseURI()} to validate each component
      *
@@ -69,7 +69,8 @@ class URIEncoderDecoder {
                 continue;
             }
             if (!((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
-                    || (ch >= '0' && ch <= '9') || legal.indexOf(ch) > -1 || ch > 127)) {
+                    || (ch >= '0' && ch <= '9') || legal.indexOf(ch) > -1 || (ch > 127
+                        && !isSpaceChar(ch) && !isISOControl(ch)))) {
                 throw new URISyntaxException(s, "Illegal character", i); //$NON-NLS-1$
             }
             i++;
@@ -94,7 +95,8 @@ class URIEncoderDecoder {
      * by '%'.
      * <p>
      * For example: '#' -> %23
-     * Other characters, which are unicode chars that are not US-ASCII, are preserved.
+     * Other characters, which are unicode chars that are not US-ASCII, and are
+     * not ISO Control or are not ISO Space chars, are preserved.
      * <p>
      * Called from {@code URI.quoteComponent()} (for multiple argument
      * constructors)
@@ -115,7 +117,7 @@ class URIEncoderDecoder {
                     || (ch >= 'A' && ch <= 'Z')
                     || (ch >= '0' && ch <= '9')
                     || legal.indexOf(ch) > -1
-                    || ch > 127) {
+                    || (ch > 127 && !isSpaceChar(ch) && !isISOControl(ch))) {
                 buf.append(ch);
             } else {
                 byte[] bytes = new String(new char[] { ch }).getBytes(encoding);
@@ -179,5 +181,49 @@ class URIEncoderDecoder {
     static String decode(String s) throws UnsupportedEncodingException {
         return URL.decode(s);
     }
+    
+    /**
+     * Indicates whether the specified character is a Unicode space character.
+     * That is, if it is a member of one of the Unicode categories Space
+     * Separator, Line Separator, or Paragraph Separator.
+     * 
+     * @param c
+     *            the character to check.
+     * @return {@code true} if {@code c} is a Unicode space character,
+     *         {@code false} otherwise.
+     */
+    static boolean isSpaceChar(char c) {
+        if (c == 0x20 || c == 0xa0 || c == 0x1680) {
+            return true;
+        }
+        if (c < 0x2000) {
+            return false;
+        }
+        return c <= 0x200b || c == 0x2028 || c == 0x2029 || c == 0x202f
+                || c == 0x3000;
+    }
+    
+    /**
+     * Indicates whether the specified character is an ISO control character.
+     * 
+     * @param c
+     *            the character to check.
+     * @return {@code true} if {@code c} is an ISO control character;
+     *         {@code false} otherwise.
+     */
+    static boolean isISOControl(char c) {
+        return isISOControl((int)c);
+    }
 
+    /**
+     * Indicates whether the specified code point is an ISO control character.
+     * 
+     * @param c
+     *            the code point to check.
+     * @return {@code true} if {@code c} is an ISO control character;
+     *         {@code false} otherwise.
+     */
+    static boolean isISOControl(int c) {
+        return (c >= 0 && c <= 0x1f) || (c >= 0x7f && c <= 0x9f);
+    }
 }
