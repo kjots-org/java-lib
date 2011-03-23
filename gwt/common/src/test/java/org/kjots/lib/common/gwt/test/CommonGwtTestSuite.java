@@ -8,7 +8,8 @@ import junit.framework.TestSuite;
 
 import com.google.gwt.junit.tools.GWTTestSuite;
 
-import org.kjots.lib.common.gwt.client.emul.java.net.URIGwtTest;
+import org.kjots.lib.common.gwt.client.org.apache.harmony.luni.tests.java.net.URIGwtTest;
+import org.kjots.lib.common.gwt.client.org.apache.harmony.luni.tests.java.net.URISyntaxExceptionGwtTest;
 
 /**
  * Common GWT Test Suite.
@@ -39,6 +40,7 @@ public class CommonGwtTestSuite extends GWTTestSuite {
    */
   public static void addTestSuites(TestSuite suite) {
     suite.addTestSuite(URIGwtTest.class);
+    suite.addTestSuite(URISyntaxExceptionGwtTest.class);
   }
   
   /**
