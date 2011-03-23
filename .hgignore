@@ -11,3 +11,7 @@ syntax: regexp
 ^gwt/common/eclipse-bin$
 syntax: regexp
 ^gwt/common/target$
+syntax: regexp
+^gwt/common/tomcat$
+syntax: regexp
+^gwt/common/www-test$

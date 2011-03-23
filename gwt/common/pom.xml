@@ -62,6 +62,13 @@
           <include>${package.path}/shared/**/*.java</include>
         </includes>
       </resource>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>${package.path}/gwt/client/**/*.java</include>
+          <include>${package.path}/gwt/emul/**/*.java</include>
+        </includes>
+      </resource>
     </resources>
     
     <testResources>
@@ -72,5 +79,48 @@
         </includes>
       </testResource>
     </testResources>
+    
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${version.plugin.maven-compiler}</version>
+        <configuration>
+          <excludes>
+            <exclude>${package.path}/gwt/emul/**/*.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>    
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${version.plugin.maven-surefire}</version>
+        <configuration>
+          <excludes>
+            <exclude>**/*GwtTest.java</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>${version.plugin.gwt}</version>
+        <configuration>
+          <includes>${package.path}/gwt/test/CommonGwtTestSuite.java</includes>
+          <mode>htmlunit</mode>
+          <testTimeOut>0</testTimeOut>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>
