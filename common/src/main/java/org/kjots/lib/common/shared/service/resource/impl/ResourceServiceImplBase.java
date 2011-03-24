@@ -97,9 +97,25 @@ public abstract class ResourceServiceImplBase extends ServiceImplBase implements
   @Override
   public final URI createResourceUri(String resourceType, URI parentResourceUri, String path, String query, String fragment) {
     if (resourceType == null || resourceType.isEmpty()) throw new IllegalArgumentException("resourceType cannot be null or empty");
+    if (parentResourceUri == null && path == null && query == null) throw new IllegalArgumentException("parentResourceUri, path and query cannot all be null");
     
     try {
-      return new URI(resourceType, null, (parentResourceUri != null ? parentResourceUri.getPath() : "") + (path != null ? path : ""), query, fragment);
+      String actualPath = null;
+      if (parentResourceUri != null || path != null) {
+        StringBuilder actualPathBuilder = new StringBuilder();
+        
+        if (parentResourceUri != null) {
+          actualPathBuilder.append(parentResourceUri.getPath());
+        }
+        
+        if (path != null) {
+          actualPathBuilder.append(path);
+        }
+        
+        actualPath = actualPathBuilder.toString();
+      }
+      
+      return new URI(resourceType, null, actualPath, query, fragment);
     }
     catch (URISyntaxException use) {
       throw new IllegalArgumentException(

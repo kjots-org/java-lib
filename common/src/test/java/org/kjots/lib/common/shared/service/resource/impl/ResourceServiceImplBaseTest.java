@@ -218,6 +218,21 @@ public class ResourceServiceImplBaseTest {
    * method.
    * <p>
    * This test asserts that the {@link ResourceServiceImplBase#createResourceUri(String, URI, String, String, String)}
+   * method throws an {@link IllegalArgumentException} when provided with a 
+   * <code>null</code> parent resource URI, path and query.
+   */
+  @Test(expected = IllegalArgumentException.class)
+  public void createResourceUri_String_URI_String_String_String__withNullParentResourceUriAndNullPathAndNullQuery() {
+    when(testResourceServiceImplBase.createResourceUri(anyString(), (URI)any(), anyString(), anyString(), anyString())).thenCallRealMethod();
+    
+    testResourceServiceImplBase.createResourceUri("resourceType", null, null, null, null);
+  }
+  
+  /**
+   * Test the {@link ResourceServiceImplBase#createResourceUri(String, URI, String, String, String)}
+   * method.
+   * <p>
+   * This test asserts that the {@link ResourceServiceImplBase#createResourceUri(String, URI, String, String, String)}
    * method correctly creates a resource URI.
    */
   @Test
@@ -225,8 +240,6 @@ public class ResourceServiceImplBaseTest {
     when(testResourceServiceImplBase.createResourceUri(anyString(), (URI)any(), anyString(), anyString(), anyString())).thenCallRealMethod();
     
     String[][] allParams = {
-//      { "resourceType:", "resourceType", null, null, null, null },
-//      { "resourceType:#fragment", "resourceType", null, null, null, "fragment" },
       { "resourceType:?query", "resourceType", null, null, "query", null },
       { "resourceType:?query#fragment", "resourceType", null, null, "query", "fragment" },
       { "resourceType:/path", "resourceType", null, "/path", null, null },
