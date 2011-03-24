@@ -5,7 +5,6 @@ package org.kjots.lib.common.shared.service.resource.impl;
 
 import org.junit.Test;
 
-import org.kjots.lib.common.CommonTestBase;
 import org.kjots.lib.common.shared.service.resource.ResourceDescriptor;
 
 /**
@@ -16,9 +15,9 @@ import org.kjots.lib.common.shared.service.resource.ResourceDescriptor;
  * @author <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>
  * @since 99-SNAPSHOT
  */
-public class ResourceDescriptorImplTest extends CommonTestBase {
+public class ResourceDescriptorImplTest {
   /**
-   * Test the the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
+   * Test the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
    * constructor.
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
@@ -26,12 +25,12 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * a <code>null</code> resource type.
    */
   @Test(expected = IllegalArgumentException.class)
-  public void testOneArgConstructorWithNullResourceUriScheme() {
+  public void ResourceDescriptorImpl_String__withNullResourceType() {
     new ResourceDescriptorImpl(null);
   }
   
   /**
-   * Test the the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
+   * Test the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
    * constructor.
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String)}
@@ -39,12 +38,12 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * an empty resource type.
    */
   @Test(expected = IllegalArgumentException.class)
-  public void testOneArgConstructorWithEmptyResourceUriScheme() {
+  public void ResourceDescriptorImpl_String__withEmptyResourceType() {
     new ResourceDescriptorImpl("");
   }
   
   /**
-   * Test the the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
+   * Test the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
    * constructor.
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
@@ -52,12 +51,12 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * a <code>null</code> resource type.
    */
   @Test(expected = IllegalArgumentException.class)
-  public void testTwoArgConstructorWithNullResourceUriScheme() {
+  public void ResourceDescriptorImpl_String_ResourceDescriptor__withNullResourceType() {
     new ResourceDescriptorImpl(null, null);
   }
   
   /**
-   * Test the the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
+   * Test the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
    * constructor.
    * <p>
    * This test asserts that the {@link ResourceDescriptorImpl#ResourceDescriptorImpl(String, ResourceDescriptor)}
@@ -65,7 +64,7 @@ public class ResourceDescriptorImplTest extends CommonTestBase {
    * an empty resource type.
    */
   @Test(expected = IllegalArgumentException.class)
-  public void testTwoArgConstructorWithEmptyResourceUriScheme() {
+  public void ResourceDescriptorImpl_String_ResourceDescriptor__withEmptyResourceType() {
     new ResourceDescriptorImpl("", null);
   }
 }

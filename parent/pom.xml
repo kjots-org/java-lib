@@ -68,7 +68,8 @@
     <dir.module.common>${dir.project}/common</dir.module.common>
     
     <version.junit>4.8.2</version.junit>
-    <version.mockito>1.8.0</version.mockito>
+    <version.mockito>1.8.5</version.mockito>
+    <version.powermock>1.4.8</version.powermock>
   </properties>
   
   <dependencies>
@@ -84,5 +85,17 @@
       <version>${version.mockito}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-module-junit4</artifactId>
+      <version>${version.powermock}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.powermock</groupId>
+      <artifactId>powermock-api-mockito</artifactId>
+      <version>${version.powermock}</version>
+      <scope>test</scope>
+    </dependency>  
   </dependencies>
 </project>
