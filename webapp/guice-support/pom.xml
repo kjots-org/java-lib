@@ -39,8 +39,13 @@
   
   <dependencies>
     <dependency>
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
+      <groupId>org.kjots.java-lib</groupId>
+      <artifactId>kjots-org-guice-support</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.inject.extensions</groupId> 
+      <artifactId>guice-servlet</artifactId>
       <version>${version.guice}</version>
     </dependency>
     <dependency>
