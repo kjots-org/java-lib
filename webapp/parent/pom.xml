@@ -36,8 +36,6 @@
     <dir.project>${basedir}/../..</dir.project>
     
     <dir.module.webapp.parent>${dir.project}/webapp/parent</dir.module.webapp.parent>
-    
-    <version.servlet-api>2.5</version.servlet-api>
   </properties>
 </project>
   

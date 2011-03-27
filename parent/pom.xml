@@ -67,6 +67,9 @@
     
     <dir.module.common>${dir.project}/common</dir.module.common>
     
+    <version.guice>3.0-rc3</version.guice>
+    <version.servlet-api>2.5</version.servlet-api>
+    
     <version.junit>4.8.2</version.junit>
     <version.mockito>1.8.5</version.mockito>
     <version.powermock>1.4.8</version.powermock>

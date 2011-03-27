@@ -21,70 +21,65 @@
   
   <parent>
     <groupId>org.kjots.java-lib</groupId>
-    <artifactId>kjots-org-java-lib-parent</artifactId>
+    <artifactId>kjots-org-webapp-lib-parent</artifactId>
     <version>99-SNAPSHOT</version>
-    <relativePath>parent/pom.xml</relativePath>
+    <relativePath>../parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-java-lib</artifactId>
+  <artifactId>kjots-org-webapp-guice-support</artifactId>
   
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
   
-  <name>kjots.org Java Library</name>
-  
-  <licenses>
-    <license>
-      <name>Apache 2</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-    </license>
-  </licenses>
-  
-  <scm>
-    <connection>scm:hg:http://kjots-org-java-lib.googlecode.com/hg/</connection>
-    <developerConnection>scm:hg:https://kjots-org-java-lib.googlecode.com/hg/</developerConnection>
-    <url>http://code.google.com/p/kjots-org-java-lib/source/browse/</url>
-  </scm>
-  
-  <distributionManagement>
-    <downloadUrl>http://code.google.com/p/kjots-org-java-lib/</downloadUrl>
-  </distributionManagement>
-  
-  <issueManagement>
-    <system>Google Code</system>
-    <url>http://code.google.com/p/kjots-org-java-lib/issues/list</url>
-  </issueManagement>
+  <name>kjots.org Web Application Library Guice Support</name>
   
   <properties>
-    <dir.project>${basedir}</dir.project>
+    <package>org.kjots.lib.webapp.guice</package>
+    <package.path>org/kjots/lib/webapp/guice</package.path>
   </properties>
   
-  <modules>
-    <module>parent</module>
-    <module>common</module>
-    
-    <module>webapp/parent</module>
-    <module>webapp/guice-support</module>
-    
-    <module>gwt/parent</module>
-    <module>gwt/common</module>
-  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>${version.guice}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${version.servlet-api}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
   
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>${version.plugin.maven-source}</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>${version.plugin.maven-javadoc}</version>
         <configuration>
-          <reportOutputDirectory>doc</reportOutputDirectory>
-          <destDir>api</destDir>
+          <destDir>doc/api</destDir>
           <notimestamp>true</notimestamp>
         </configuration>
         <executions>
           <execution>
-            <phase>install</phase>
+            <phase>package</phase>
             <goals>
-              <goal>aggregate</goal>
+              <goal>jar</goal>
             </goals>
           </execution>
         </executions>

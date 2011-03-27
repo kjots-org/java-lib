@@ -15,3 +15,7 @@ syntax: regexp
 ^gwt/common/tomcat$
 syntax: regexp
 ^gwt/common/www-test$
+syntax: regexp
+^webapp/guice-support/eclipse-bin$
+syntax: regexp
+^webapp/guice-support/target$
