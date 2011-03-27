@@ -30,7 +30,7 @@
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Common</name>
+  <name>kjots.org Java Library Common</name>
   
   <properties>
     <package>org.kjots.lib.common</package>

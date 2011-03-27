@@ -26,35 +26,18 @@
     <relativePath>../../parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-gwt-lib-parent</artifactId>
+  <artifactId>kjots-org-webapp-lib-parent</artifactId>
   
   <packaging>pom</packaging>
   
-  <name>kjots.org GWT Library Parent</name>
+  <name>kjots.org Web Application Library Parent</name>
   
   <properties>
     <dir.project>${basedir}/../..</dir.project>
     
-    <dir.module.gwt.parent>${dir.project}/gwt/parent</dir.module.gwt.parent>
-    <dir.module.gwt.common>${dir.project}/gwt/common</dir.module.gwt.common>
+    <dir.module.webapp.parent>${dir.project}/webapp/parent</dir.module.webapp.parent>
     
-    <version.gwt>2.2.0</version.gwt>
-    
-    <version.plugin.gwt>2.2.0</version.plugin.gwt>
+    <version.servlet-api>2.5</version.servlet-api>
   </properties>
-  
-  <dependencies>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-user</artifactId>
-      <version>${version.gwt}</version>
-      <scope>provided</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.google.gwt</groupId>
-      <artifactId>gwt-servlet</artifactId>
-      <version>${version.gwt}</version>
-      <scope>runtime</scope>
-    </dependency>
-  </dependencies>
 </project>
+  
