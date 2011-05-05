@@ -14,7 +14,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<!DOCTYPE module SYSTEM "http://google-web-toolkit.googlecode.com/svn/releases/2.2/distro-source/core/src/gwt-module.dtd">
+<!DOCTYPE module SYSTEM "http://google-web-toolkit.googlecode.com/svn/releases/2.3/distro-source/core/src/gwt-module.dtd">
 <!--
   org.kjots.lib.common.Common
   

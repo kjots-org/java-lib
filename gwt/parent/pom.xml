@@ -38,7 +38,8 @@
     <dir.module.gwt.parent>${dir.project}/gwt/parent</dir.module.gwt.parent>
     <dir.module.gwt.common>${dir.project}/gwt/common</dir.module.gwt.common>
     
-    <version.gwt>2.2.0</version.gwt>
+    <version.gwt>2.3.0</version.gwt>
+    <version.javax.validation>1.0.0.GA</version.javax.validation>
     
     <version.plugin.gwt>2.2.0</version.plugin.gwt>
   </properties>
@@ -50,6 +51,25 @@
       <version>${version.gwt}</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-dev</artifactId>
+      <version>${version.gwt}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+		  <groupId>javax.validation</groupId>
+		  <artifactId>validation-api</artifactId>
+		  <version>${version.javax.validation}</version>
+		  <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>${version.javax.validation}</version>
+      <classifier>sources</classifier>
+      <scope>provided</scope>
+    </dependency>    
     <dependency>
       <groupId>com.google.gwt</groupId>
       <artifactId>gwt-servlet</artifactId>
