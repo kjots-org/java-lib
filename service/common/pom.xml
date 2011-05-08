@@ -26,11 +26,11 @@
     <relativePath>../maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-service-common</artifactId>
+  <artifactId>org.kjots.java-lib.service.common</artifactId>
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Service Library - Common</name>
+  <name>kjots.org Java Service Library - Common</name>
   
   <properties>
     <package>org.kjots.lib.service.common</package>
