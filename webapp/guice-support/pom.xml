@@ -40,7 +40,7 @@
   <dependencies>
     <dependency>
       <groupId>org.kjots.java-lib</groupId>
-      <artifactId>kjots-org-guice-support</artifactId>
+      <artifactId>org.kjots.java-lib.guice-support</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>

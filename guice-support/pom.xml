@@ -26,7 +26,7 @@
     <relativePath>../maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-guice-support</artifactId>
+  <artifactId>org.kjots.java-lib.guice-support</artifactId>
   
   <packaging>jar</packaging>
   
