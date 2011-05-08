@@ -20,26 +20,56 @@
   <modelVersion>4.0.0</modelVersion>
   
   <parent>
-    <groupId>org.kjots.java-lib</groupId>
-    <artifactId>org.kjots.java-lib.maven-parent</artifactId>
-    <version>99-SNAPSHOT</version>
-    <relativePath>../../maven-parent/pom.xml</relativePath>
+    <groupId>org.kjots</groupId>
+    <artifactId>org.kjots.maven-base</artifactId>
+    <version>11.5.8</version>
+    <relativePath/>
   </parent>
   
-  <artifactId>org.kjots.java-lib.gwt.maven-parent</artifactId>
+  <groupId>org.kjots.gwt-lib</groupId>
+  <artifactId>org.kjots.gwt-lib.maven-parent</artifactId>
+  <version>99-SNAPSHOT</version>
   
   <packaging>pom</packaging>
   
   <name>kjots.org GWT Library - Maven Parent</name>
   
+  <distributionManagement>
+    <repository>
+      <id>kjots-org-java-lib</id>
+      <name>kjots.org Java Library</name>
+      <url>file://${dir.project}/../maven/</url>
+      <layout>default</layout>
+      <uniqueVersion>false</uniqueVersion>
+    </repository>
+    <snapshotRepository>
+      <id>kjots-org-java-lib-snapshot</id>
+      <name>kjots.org Java Library Snapshots</name>
+      <url>file://${dir.project}/../snapshots/</url>
+      <layout>default</layout>
+      <uniqueVersion>true</uniqueVersion>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <repositories>
+    <repository>
+      <id>kjots-org-java-lib</id>
+      <name>kjots.org Java Library</name>
+      <url>http://kjots-org-java-lib.googlecode.com/hg/maven/</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+  
   <properties>
-    <dir.project>${basedir}/../..</dir.project>
+    <dir.project>${basedir}/..</dir.project>
     
-    <dir.module.gwt.maven-parent>${dir.project}/gwt/maven-parent</dir.module.gwt.maven-parent>
-    <dir.module.gwt.uri-emul>${dir.project}/gwt/uri-emul</dir.module.gwt.uri-emul>
+    <dir.module.maven-parent>${dir.project}/maven-parent</dir.module.maven-parent>
+    <dir.module.uri-emul>${dir.project}/uri-emul</dir.module.uri-emul>
     
     <version.gwt>2.3.0</version.gwt>
     <version.javax.validation>1.0.0.GA</version.javax.validation>
+    
+    <version.junit>4.8.2</version.junit>
     
     <version.plugin.gwt>2.2.0</version.plugin.gwt>
   </properties>
@@ -75,6 +105,12 @@
       <artifactId>gwt-servlet</artifactId>
       <version>${version.gwt}</version>
       <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${version.junit}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

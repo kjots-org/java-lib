@@ -16,14 +16,16 @@ syntax: regexp
 syntax: regexp
 ^guice-support/target$
 syntax: regexp
-^gwt/uri-emul/eclipse-bin$
-syntax: regexp
-^gwt/uri-emul/target$
-syntax: regexp
-^gwt/uri-emul/tomcat$
-syntax: regexp
-^gwt/uri-emul/www-test$
-syntax: regexp
 ^webapp/guice-support/eclipse-bin$
 syntax: regexp
 ^webapp/guice-support/target$
+syntax: regexp
+^org.kjots.gwt-lib/target$
+syntax: regexp
+^org.kjots.gwt-lib/uri-emul/eclipse-bin$
+syntax: regexp
+^org.kjots.gwt-lib/uri-emul/target$
+syntax: regexp
+^org.kjots.gwt-lib/uri-emul/tomcat$
+syntax: regexp
+^org.kjots.gwt-lib/uri-emul/www-test$

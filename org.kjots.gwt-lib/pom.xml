@@ -20,17 +20,17 @@
   <modelVersion>4.0.0</modelVersion>
   
   <parent>
-    <groupId>org.kjots.java-lib</groupId>
-    <artifactId>org.kjots.java-lib.maven-parent</artifactId>
+    <groupId>org.kjots.gwt-lib</groupId>
+    <artifactId>org.kjots.gwt-lib.maven-parent</artifactId>
     <version>99-SNAPSHOT</version>
     <relativePath>maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>org.kjots.java-lib</artifactId>
+  <artifactId>org.kjots.gwt-lib</artifactId>
   
   <packaging>pom</packaging>
   
-  <name>kjots.org Java Library</name>
+  <name>kjots.org GWT Library</name>
   
   <licenses>
     <license>
@@ -60,36 +60,6 @@
   
   <modules>
     <module>maven-parent</module>
-    <module>guice-support</module>
-    
-    <module>service/maven-parent</module>
-    <module>service/common</module>
-    <module>service/resource</module>
-    
-    <module>webapp/maven-parent</module>
-    <module>webapp/guice-support</module>
+    <module>uri-emul</module>
   </modules>
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>${version.plugin.maven-javadoc}</version>
-        <configuration>
-          <reportOutputDirectory>doc</reportOutputDirectory>
-          <destDir>api</destDir>
-          <notimestamp>true</notimestamp>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>install</phase>
-            <goals>
-              <goal>aggregate</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-    </plugins>
-  </build>
 </project>
