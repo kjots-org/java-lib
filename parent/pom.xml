@@ -64,8 +64,14 @@
     <dir.project>${basedir}/..</dir.project>
     
     <dir.module.parent>${dir.project}/parent</dir.module.parent>
+    <dir.module.guice-support>${dir.project}/guice-support</dir.module.guice-support>
     
-    <dir.module.common>${dir.project}/common</dir.module.common>
+    <dir.module.service.parent>${dir.project}/service/parent</dir.module.service.parent>
+    <dir.module.service.common>${dir.project}/service/common</dir.module.service.common>
+    <dir.module.service.resource>${dir.project}/service/resource</dir.module.service.resource>
+    
+    <dir.module.webapp.parent>${dir.project}/webapp/parent</dir.module.webapp.parent>
+    <dir.module.webapp.guice-support>${dir.project}/webapp/parent</dir.module.webapp.guice-support>
     
     <version.guice>3.0</version.guice>
     <version.servlet-api>2.5</version.servlet-api>

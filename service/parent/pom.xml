@@ -34,8 +34,5 @@
   
   <properties>
     <dir.project>${basedir}/../..</dir.project>
-    
-    <dir.module.service.parent>${dir.project}/service/parent</dir.module.service.parent>
-    <dir.module.service.common>${dir.project}/service/common</dir.module.service.common>
   </properties>
 </project>

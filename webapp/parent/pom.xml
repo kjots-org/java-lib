@@ -34,8 +34,6 @@
   
   <properties>
     <dir.project>${basedir}/../..</dir.project>
-    
-    <dir.module.webapp.parent>${dir.project}/webapp/parent</dir.module.webapp.parent>
   </properties>
 </project>
   
