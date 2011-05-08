@@ -27,12 +27,12 @@
   </parent>
   
   <groupId>org.kjots.java-lib</groupId>
-  <artifactId>kjots-org-java-lib-parent</artifactId>
+  <artifactId>org.kjots.java-lib.maven-parent</artifactId>
   <version>99-SNAPSHOT</version>
   
   <packaging>pom</packaging>
   
-  <name>kjots.org Java Library - Parent</name>
+  <name>kjots.org Java Library - Maven Parent</name>
   
   <distributionManagement>
     <repository>

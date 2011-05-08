@@ -21,9 +21,9 @@
   
   <parent>
     <groupId>org.kjots.java-lib</groupId>
-    <artifactId>kjots-org-java-lib-parent</artifactId>
+    <artifactId>org.kjots.java-lib.maven-parent</artifactId>
     <version>99-SNAPSHOT</version>
-    <relativePath>../../parent/pom.xml</relativePath>
+    <relativePath>../../maven-parent/pom.xml</relativePath>
   </parent>
   
   <artifactId>kjots-org-webapp-lib-parent</artifactId>
