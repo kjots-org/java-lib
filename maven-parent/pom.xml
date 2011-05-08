@@ -70,7 +70,7 @@
     <dir.module.service.common>${dir.project}/service/common</dir.module.service.common>
     <dir.module.service.resource>${dir.project}/service/resource</dir.module.service.resource>
     
-    <dir.module.webapp.parent>${dir.project}/webapp/parent</dir.module.webapp.parent>
+    <dir.module.webapp.maven-parent>${dir.project}/webapp/maven-parent</dir.module.webapp.maven-parent>
     <dir.module.webapp.guice-support>${dir.project}/webapp/parent</dir.module.webapp.guice-support>
     
     <version.guice>3.0</version.guice>
