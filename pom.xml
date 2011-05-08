@@ -65,6 +65,7 @@
     
     <module>service/parent</module>
     <module>service/common</module>
+    <module>service/resource</module>
     
     <module>webapp/parent</module>
     <module>webapp/guice-support</module>

@@ -7,8 +7,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import org.kjots.lib.service.common.shared.resource.ResourceServiceTestSuite;
-
 /**
  * Service Common Test Suite.
  * <p>
@@ -19,7 +17,6 @@ import org.kjots.lib.service.common.shared.resource.ResourceServiceTestSuite;
  */
 @RunWith(Suite.class)
 @SuiteClasses({
-  ResourceServiceTestSuite.class,
 })
 public class ServiceCommonTestSuite {
 }

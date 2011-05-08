@@ -8,6 +8,10 @@ syntax: regexp
 syntax: regexp
 ^service/common/target$
 syntax: regexp
+^service/resource/eclipse-bin$
+syntax: regexp
+^service/resource/target$
+syntax: regexp
 ^guice-support/eclipse-bin$
 syntax: regexp
 ^guice-support/target$
