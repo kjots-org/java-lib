@@ -30,7 +30,7 @@
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Java Library Guice Support</name>
+  <name>kjots.org Java Library - Guice Support</name>
   
   <properties>
     <package>org.kjots.lib.guice</package>

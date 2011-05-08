@@ -30,7 +30,7 @@
   
   <packaging>pom</packaging>
   
-  <name>kjots.org GWT Library Parent</name>
+  <name>kjots.org GWT Library - Parent</name>
   
   <properties>
     <dir.project>${basedir}/../..</dir.project>

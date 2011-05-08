@@ -60,8 +60,11 @@
   
   <modules>
     <module>parent</module>
-    <module>common</module>
+    
     <module>guice-support</module>
+    
+    <module>service/parent</module>
+    <module>service/common</module>
     
     <module>webapp/parent</module>
     <module>webapp/guice-support</module>

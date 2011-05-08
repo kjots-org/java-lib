@@ -32,7 +32,7 @@
   
   <packaging>pom</packaging>
   
-  <name>kjots.org Java Library Parent</name>
+  <name>kjots.org Java Library - Parent</name>
   
   <distributionManagement>
     <repository>

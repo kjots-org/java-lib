@@ -4,9 +4,9 @@ syntax: regexp
 syntax: regexp
 ^snapshots$
 syntax: regexp
-^common/eclipse-bin$
+^service/common/eclipse-bin$
 syntax: regexp
-^common/target$
+^service/common/target$
 syntax: regexp
 ^guice-support/eclipse-bin$
 syntax: regexp

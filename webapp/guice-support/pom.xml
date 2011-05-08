@@ -30,7 +30,7 @@
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Web Application Library Guice Support</name>
+  <name>kjots.org Web Application Library - Guice Support</name>
   
   <properties>
     <package>org.kjots.lib.webapp.guice</package>
