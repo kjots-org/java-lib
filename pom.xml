@@ -71,7 +71,7 @@
     <module>webapp/guice-support</module>
     
     <module>gwt/parent</module>
-    <module>gwt/common</module>
+    <module>gwt/uri-emul</module>
   </modules>
   
   <build>

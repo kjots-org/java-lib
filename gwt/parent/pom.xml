@@ -36,7 +36,7 @@
     <dir.project>${basedir}/../..</dir.project>
     
     <dir.module.gwt.parent>${dir.project}/gwt/parent</dir.module.gwt.parent>
-    <dir.module.gwt.common>${dir.project}/gwt/common</dir.module.gwt.common>
+    <dir.module.gwt.uri-emul>${dir.project}/gwt/uri-emul</dir.module.gwt.uri-emul>
     
     <version.gwt>2.3.0</version.gwt>
     <version.javax.validation>1.0.0.GA</version.javax.validation>

@@ -16,13 +16,13 @@ syntax: regexp
 syntax: regexp
 ^guice-support/target$
 syntax: regexp
-^gwt/common/eclipse-bin$
+^gwt/uri-emul/eclipse-bin$
 syntax: regexp
-^gwt/common/target$
+^gwt/uri-emul/target$
 syntax: regexp
-^gwt/common/tomcat$
+^gwt/uri-emul/tomcat$
 syntax: regexp
-^gwt/common/www-test$
+^gwt/uri-emul/www-test$
 syntax: regexp
 ^webapp/guice-support/eclipse-bin$
 syntax: regexp
