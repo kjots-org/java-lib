@@ -21,9 +21,9 @@
   
   <parent>
     <groupId>org.kjots.java-lib</groupId>
-    <artifactId>kjots-org-gwt-lib-parent</artifactId>
+    <artifactId>org.kjots.java-lib.gwt.maven-parent</artifactId>
     <version>99-SNAPSHOT</version>
-    <relativePath>../parent/pom.xml</relativePath>
+    <relativePath>../maven-parent/pom.xml</relativePath>
   </parent>
   
   <artifactId>kjots-org-gwt-uri-emul</artifactId>

@@ -69,7 +69,7 @@
     <module>webapp/maven-parent</module>
     <module>webapp/guice-support</module>
     
-    <module>gwt/parent</module>
+    <module>gwt/maven-parent</module>
     <module>gwt/uri-emul</module>
   </modules>
   

@@ -26,16 +26,16 @@
     <relativePath>../../maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-gwt-lib-parent</artifactId>
+  <artifactId>org.kjots.java-lib.gwt.maven-parent</artifactId>
   
   <packaging>pom</packaging>
   
-  <name>kjots.org GWT Library - Parent</name>
+  <name>kjots.org GWT Library - Maven Parent</name>
   
   <properties>
     <dir.project>${basedir}/../..</dir.project>
     
-    <dir.module.gwt.parent>${dir.project}/gwt/parent</dir.module.gwt.parent>
+    <dir.module.gwt.maven-parent>${dir.project}/gwt/maven-parent</dir.module.gwt.maven-parent>
     <dir.module.gwt.uri-emul>${dir.project}/gwt/uri-emul</dir.module.gwt.uri-emul>
     
     <version.gwt>2.3.0</version.gwt>
