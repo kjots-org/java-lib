@@ -26,11 +26,11 @@
     <relativePath>../maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-webapp-guice-support</artifactId>
+  <artifactId>org.kjots.java-lib.webapp.guice-support</artifactId>
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Web Application Library - Guice Support</name>
+  <name>kjots.org Java Web Application Library - Guice Support</name>
   
   <properties>
     <package>org.kjots.lib.webapp.guice</package>
