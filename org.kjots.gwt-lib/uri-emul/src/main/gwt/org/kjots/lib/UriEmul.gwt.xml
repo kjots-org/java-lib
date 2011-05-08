@@ -21,7 +21,7 @@
   Created: 19th March 2011.
   
   @author Karl J. Ots <kjots@kjots.org>
-  @since 99-SNAPSHOT
+  @since 11.5.8
 -->
 <module>
   <inherits name="com.google.gwt.http.HTTP"/>
