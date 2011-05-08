@@ -62,7 +62,7 @@
     <module>maven-parent</module>
     <module>guice-support</module>
     
-    <module>service/parent</module>
+    <module>service/maven-parent</module>
     <module>service/common</module>
     <module>service/resource</module>
     

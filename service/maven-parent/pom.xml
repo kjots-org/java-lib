@@ -26,11 +26,11 @@
     <relativePath>../../maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>kjots-org-service-parent</artifactId>
+  <artifactId>org.kjots.java-lib.service.maven-parent</artifactId>
   
   <packaging>pom</packaging>
   
-  <name>kjots.org Service Library - Parent</name>
+  <name>kjots.org Java Service Library - Maven Parent</name>
   
   <properties>
     <dir.project>${basedir}/../..</dir.project>

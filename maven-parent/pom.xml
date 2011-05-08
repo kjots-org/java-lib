@@ -63,10 +63,10 @@
   <properties>
     <dir.project>${basedir}/..</dir.project>
     
-    <dir.module.parent>${dir.project}/parent</dir.module.parent>
+    <dir.module.maven-parent>${dir.project}/maven-parent</dir.module.maven-parent>
     <dir.module.guice-support>${dir.project}/guice-support</dir.module.guice-support>
     
-    <dir.module.service.parent>${dir.project}/service/parent</dir.module.service.parent>
+    <dir.module.service.maven-parent>${dir.project}/service/maven-parent</dir.module.service.maven-parent>
     <dir.module.service.common>${dir.project}/service/common</dir.module.service.common>
     <dir.module.service.resource>${dir.project}/service/resource</dir.module.service.resource>
     
