@@ -21,8 +21,8 @@
   
   <parent>
     <groupId>org.kjots</groupId>
-    <artifactId>maven-base</artifactId>
-    <version>11.3.23</version>
+    <artifactId>org.kjots.maven-base</artifactId>
+    <version>11.5.8</version>
     <relativePath/>
   </parent>
   
