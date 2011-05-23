@@ -3,9 +3,10 @@
 	<name>org.kjots.gwt-lib</name>
 	<comment></comment>
 	<projects>
+		<project>org.kjots.gwt-lib.maven-parent</project>
 	</projects>
-  <buildSpec>
-  </buildSpec>
-  <natures>
-  </natures>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+	</natures>
 </projectDescription>
