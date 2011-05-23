@@ -3,15 +3,16 @@
 	<name>org.kjots.java-lib.webapp.maven-parent</name>
 	<comment></comment>
 	<projects>
+		<project>org.kjots.java-lib.maven-parent</project>
 	</projects>
-  <buildSpec>
-    <buildCommand>
-      <name>org.maven.ide.eclipse.maven2Builder</name>
-      <arguments>
-      </arguments>
-    </buildCommand>
-  </buildSpec>
-  <natures>
-    <nature>org.maven.ide.eclipse.maven2Nature</nature>
-  </natures>
+	<buildSpec>
+		<buildCommand>
+			<name>org.maven.ide.eclipse.maven2Builder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.maven.ide.eclipse.maven2Nature</nature>
+	</natures>
 </projectDescription>
