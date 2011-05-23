@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.kjots</groupId>
     <artifactId>org.kjots.maven-base</artifactId>
-    <version>11.5.8</version>
+    <version>11.5.23</version>
     <relativePath/>
   </parent>
   
