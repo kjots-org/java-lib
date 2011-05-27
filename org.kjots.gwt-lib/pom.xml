@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.kjots.gwt-lib</groupId>
     <artifactId>org.kjots.gwt-lib.maven-parent</artifactId>
-    <version>99-SNAPSHOT</version>
+    <version>11.5.27</version>
     <relativePath>maven-parent/pom.xml</relativePath>
   </parent>
   
@@ -54,12 +54,9 @@
     <url>http://code.google.com/p/kjots-org-java-lib/issues/list</url>
   </issueManagement>
   
-  <properties>
-    <dir.project>${basedir}</dir.project>
-  </properties>
-  
   <modules>
     <module>maven-parent</module>
+    
     <module>uri-emul</module>
   </modules>
 </project>

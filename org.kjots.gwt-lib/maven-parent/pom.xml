@@ -22,50 +22,32 @@
   <parent>
     <groupId>org.kjots</groupId>
     <artifactId>org.kjots.maven-base</artifactId>
-    <version>11.5.8</version>
+    <version>11.5.27</version>
     <relativePath/>
   </parent>
   
   <groupId>org.kjots.gwt-lib</groupId>
   <artifactId>org.kjots.gwt-lib.maven-parent</artifactId>
-  <version>99-SNAPSHOT</version>
+  <version>11.5.27</version>
   
   <packaging>pom</packaging>
   
   <name>kjots.org GWT Library - Maven Parent</name>
   
-  <distributionManagement>
-    <repository>
-      <id>kjots-org-java-lib</id>
-      <name>kjots.org Java Library</name>
-      <url>file://${dir.project}/../maven/</url>
-      <layout>default</layout>
-      <uniqueVersion>false</uniqueVersion>
-    </repository>
-    <snapshotRepository>
-      <id>kjots-org-java-lib-snapshot</id>
-      <name>kjots.org Java Library Snapshots</name>
-      <url>file://${dir.project}/../snapshots/</url>
-      <layout>default</layout>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
-  </distributionManagement>
-  
   <repositories>
     <repository>
-      <id>kjots-org-java-lib</id>
-      <name>kjots.org Java Library</name>
-      <url>http://kjots-org-java-lib.googlecode.com/hg/maven/</url>
-      <layout>default</layout>
+      <id>kjots-org-maven-repository</id>
+      <name>kjots.org Maven repository</name>
+      <url>http://kjots-org-maven-repository.googlecode.com/svn/repository/</url>
+    </repository>
+    <repository>
+      <id>kjots-org-maven-snapshot-repository</id>
+      <name>kjots.org Maven snapshot repository</name>
+      <url>http://kjots-org-maven-repository.googlecode.com/svn/snapshot-repository/</url>
     </repository>
   </repositories>
   
   <properties>
-    <dir.project>${basedir}/..</dir.project>
-    
-    <dir.module.maven-parent>${dir.project}/maven-parent</dir.module.maven-parent>
-    <dir.module.uri-emul>${dir.project}/uri-emul</dir.module.uri-emul>
-    
     <version.gwt>2.3.0</version.gwt>
     <version.javax.validation>1.0.0.GA</version.javax.validation>
     
