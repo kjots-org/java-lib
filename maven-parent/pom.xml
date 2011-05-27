@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.kjots</groupId>
     <artifactId>org.kjots.maven-base</artifactId>
-    <version>11.5.23</version>
+    <version>11.5.27</version>
     <relativePath/>
   </parent>
   
@@ -34,45 +34,20 @@
   
   <name>kjots.org Java Library - Maven Parent</name>
   
-  <distributionManagement>
-    <repository>
-      <id>kjots-org-java-lib</id>
-      <name>kjots.org Java Library</name>
-      <url>file://${dir.project}/maven/</url>
-      <layout>default</layout>
-      <uniqueVersion>false</uniqueVersion>
-    </repository>
-    <snapshotRepository>
-      <id>kjots-org-java-lib-snapshot</id>
-      <name>kjots.org Java Library Snapshots</name>
-      <url>file://${dir.project}/snapshots/</url>
-      <layout>default</layout>
-      <uniqueVersion>true</uniqueVersion>
-    </snapshotRepository>
-  </distributionManagement>
-  
   <repositories>
     <repository>
-      <id>kjots-org-java-lib</id>
-      <name>kjots.org Java Library</name>
-      <url>http://kjots-org-java-lib.googlecode.com/hg/maven/</url>
-      <layout>default</layout>
+      <id>kjots-org-maven-repository</id>
+      <name>kjots.org Maven repository</name>
+      <url>http://kjots-org-maven-repository.googlecode.com/svn/repository/</url>
+    </repository>
+    <repository>
+      <id>kjots-org-maven-snapshot-repository</id>
+      <name>kjots.org Maven snapshot repository</name>
+      <url>http://kjots-org-maven-repository.googlecode.com/svn/snapshot-repository/</url>
     </repository>
   </repositories>
   
   <properties>
-    <dir.project>${basedir}/..</dir.project>
-    
-    <dir.module.maven-parent>${dir.project}/maven-parent</dir.module.maven-parent>
-    <dir.module.guice-support>${dir.project}/guice-support</dir.module.guice-support>
-    
-    <dir.module.service.maven-parent>${dir.project}/service/maven-parent</dir.module.service.maven-parent>
-    <dir.module.service.common>${dir.project}/service/common</dir.module.service.common>
-    <dir.module.service.resource>${dir.project}/service/resource</dir.module.service.resource>
-    
-    <dir.module.webapp.maven-parent>${dir.project}/webapp/maven-parent</dir.module.webapp.maven-parent>
-    <dir.module.webapp.guice-support>${dir.project}/webapp/parent</dir.module.webapp.guice-support>
-    
     <version.guice>3.0</version.guice>
     <version.servlet-api>2.5</version.servlet-api>
     

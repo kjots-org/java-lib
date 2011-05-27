@@ -54,19 +54,14 @@
     <url>http://code.google.com/p/kjots-org-java-lib/issues/list</url>
   </issueManagement>
   
-  <properties>
-    <dir.project>${basedir}</dir.project>
-  </properties>
-  
   <modules>
     <module>maven-parent</module>
+    
     <module>guice-support</module>
     
-    <module>service/maven-parent</module>
     <module>service/common</module>
     <module>service/resource</module>
     
-    <module>webapp/maven-parent</module>
     <module>webapp/guice-support</module>
   </modules>
   
