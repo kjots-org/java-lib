@@ -28,7 +28,7 @@
   
   <groupId>org.kjots.gwt-lib</groupId>
   <artifactId>org.kjots.gwt-lib.maven-parent</artifactId>
-  <version>11.5.27</version>
+  <version>99-SNAPSHOT</version>
   
   <packaging>pom</packaging>
   
