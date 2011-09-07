@@ -1,6 +1,0 @@
-#Sun May 08 12:16:06 EST 2011
-eclipse.preferences.version=1
-org.eclipse.jdt.ui.ignorelowercasenames=true
-org.eclipse.jdt.ui.importorder=\#org.junit;\#org.Mockito;\#org.powermock.api.mockito.PowerMockito;java;javax;;junit;org.junit;org.mockito;org.kjots.lib.gwt;
-org.eclipse.jdt.ui.ondemandthreshold=99999
-org.eclipse.jdt.ui.staticondemandthreshold=99999
