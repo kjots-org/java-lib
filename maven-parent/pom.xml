@@ -28,7 +28,7 @@
   
   <groupId>org.kjots.java-lib</groupId>
   <artifactId>org.kjots.java-lib.maven-parent</artifactId>
-  <version>11.9.7-SNAPSHOT</version>
+  <version>11.9.8-SNAPSHOT</version>
   
   <packaging>pom</packaging>
   

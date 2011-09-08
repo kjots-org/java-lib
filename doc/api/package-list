@@ -1,6 +1,0 @@
-org.kjots.lib.guice
-org.kjots.lib.service.common.shared
-org.kjots.lib.service.common.shared.impl
-org.kjots.lib.service.resource.shared
-org.kjots.lib.service.resource.shared.impl
-org.kjots.lib.webapp.guice
