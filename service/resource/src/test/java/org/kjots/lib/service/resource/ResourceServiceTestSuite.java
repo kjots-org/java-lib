@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
-import org.kjots.lib.service.resource.shared.impl.ResourceServiceImplTestSuite;
+import org.kjots.lib.service.resource.shared.impl.ResourceDescriptorImplTest;
+import org.kjots.lib.service.resource.shared.impl.ResourceServiceImplBaseTest;
 
 /**
  * Resource Service Test Suite.
@@ -19,7 +20,17 @@ import org.kjots.lib.service.resource.shared.impl.ResourceServiceImplTestSuite;
  */
 @RunWith(Suite.class)
 @SuiteClasses({
-  ResourceServiceImplTestSuite.class
+  ResourceServiceTestSuite.ResourceServiceImplTestSuite.class
 })
 public class ResourceServiceTestSuite {
+  /**
+   * Resource Service Implementation Test Suite.
+   */
+  @RunWith(Suite.class)
+  @SuiteClasses({
+    ResourceDescriptorImplTest.class,
+    ResourceServiceImplBaseTest.class
+  })
+  public static class ResourceServiceImplTestSuite {
+  }
 }
