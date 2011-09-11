@@ -13,7 +13,7 @@ import org.kjots.lib.service.resource.shared.ResourceDescriptor;
  * Created: 21st March 2011.
  *
  * @author <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>
- * @since 99-SNAPSHOT
+ * @since 1.0
  */
 public class ResourceDescriptorImpl implements ResourceDescriptor, Serializable {
   /** The serial version UID. */

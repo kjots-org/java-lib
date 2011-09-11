@@ -30,7 +30,7 @@ import org.mockito.Mock;
  * Created: 19th March 2011.
  *
  * @author <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>
- * @since 99-SNAPSHOT
+ * @since 1.0
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest(ResourceServiceImplBase.class)

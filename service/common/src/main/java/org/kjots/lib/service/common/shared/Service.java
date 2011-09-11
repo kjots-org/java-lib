@@ -9,7 +9,7 @@ package org.kjots.lib.service.common.shared;
  * Created: 19th March 2011.
  *
  * @author <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>
- * @since 99-SNAPSHOT
+ * @since 1.0
  */
 public interface Service {
 }

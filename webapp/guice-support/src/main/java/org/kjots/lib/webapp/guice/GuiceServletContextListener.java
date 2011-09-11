@@ -28,7 +28,7 @@ import org.kjots.lib.guice.PropertiesGuiceModulesFactory;
  * Created: 27th March 2011.
  *
  * @author <a href="mailto:kjots@kjots.org">Karl J. Ots &lt;kjots@kjots.org&gt;</a>
- * @since 99-SNAPSHOT
+ * @since 1.0
  */
 public class GuiceServletContextListener extends com.google.inject.servlet.GuiceServletContextListener {
   /** The name of the properties locations initialisation parameter. */
