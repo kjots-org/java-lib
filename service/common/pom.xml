@@ -36,19 +36,4 @@
     <package>org.kjots.lib.service.common</package>
     <package.path>org/kjots/lib/service/common</package.path>
   </properties>
-  
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>${version.plugin.maven-surefire}</version>
-        <configuration>
-          <includes>
-            <include>${package.path}/ServiceCommonTestSuite.java</include>
-          </includes>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
