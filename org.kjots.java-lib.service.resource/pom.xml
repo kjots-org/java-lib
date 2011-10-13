@@ -26,8 +26,7 @@
     <relativePath>../org.kjots.java-lib.maven-parent/pom.xml</relativePath>
   </parent>
   
-  <groupId>org.kjots.java-lib.service</groupId>
-  <artifactId>resource</artifactId>
+  <artifactId>service.resource</artifactId>
   
   <packaging>jar</packaging>
   
@@ -40,8 +39,8 @@
   
   <dependencies>
     <dependency>
-      <groupId>org.kjots.java-lib.service</groupId>
-      <artifactId>common</artifactId>
+      <groupId>org.kjots.java-lib</groupId>
+      <artifactId>service.common</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
