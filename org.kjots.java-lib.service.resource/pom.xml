@@ -21,38 +21,28 @@
   
   <parent>
     <groupId>org.kjots.java-lib</groupId>
-    <artifactId>org.kjots.java-lib.maven-parent</artifactId>
+    <artifactId>maven-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <relativePath>../../maven-parent/pom.xml</relativePath>
+    <relativePath>../org.kjots.java-lib.maven-parent/pom.xml</relativePath>
   </parent>
   
-  <artifactId>org.kjots.java-lib.webapp.guice-support</artifactId>
+  <groupId>org.kjots.java-lib.service</groupId>
+  <artifactId>resource</artifactId>
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Java Web Application Library - Guice Support</name>
+  <name>kjots.org Java Service Library - Resource Service</name>
   
   <properties>
-    <package>org.kjots.lib.webapp.guice</package>
-    <package.path>org/kjots/lib/webapp/guice</package.path>
+    <package>org.kjots.lib.service.resource</package>
+    <package.path>org/kjots/lib/service/resource</package.path>
   </properties>
   
   <dependencies>
     <dependency>
-      <groupId>org.kjots.java-lib</groupId>
-      <artifactId>org.kjots.java-lib.guice-support</artifactId>
+      <groupId>org.kjots.java-lib.service</groupId>
+      <artifactId>common</artifactId>
       <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.inject.extensions</groupId> 
-      <artifactId>guice-servlet</artifactId>
-      <version>${version.guice}</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>${version.servlet-api}</version>
-      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
