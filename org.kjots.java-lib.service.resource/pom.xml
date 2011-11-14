@@ -32,11 +32,6 @@
   
   <name>kjots.org Java Service Library - Resource Service</name>
   
-  <properties>
-    <package>org.kjots.lib.service.resource</package>
-    <package.path>org/kjots/lib/service/resource</package.path>
-  </properties>
-  
   <dependencies>
     <dependency>
       <groupId>org.kjots.java-lib</groupId>

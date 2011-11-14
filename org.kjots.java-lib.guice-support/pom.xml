@@ -32,11 +32,6 @@
   
   <name>kjots.org Java Library - Guice Support</name>
   
-  <properties>
-    <package>org.kjots.lib.guice</package>
-    <package.path>org/kjots/lib/guice</package.path>
-  </properties>
-  
   <dependencies>
     <dependency>
       <groupId>com.google.inject</groupId>
