@@ -26,6 +26,8 @@
   <packaging>pom</packaging>
   
   <name>kjots.org Java Library</name>
+  <description></description>
+  <url>https://github.com/kjots-org/Java-Library</url>
   
   <licenses>
     <license>

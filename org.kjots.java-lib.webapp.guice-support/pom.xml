@@ -31,6 +31,7 @@
   <packaging>jar</packaging>
   
   <name>kjots.org Java Web Application Library - Guice Support</name>
+  <description>kjots.org Java Web Application Library - Guice Support</description>
   
   <dependencies>
     <dependency>

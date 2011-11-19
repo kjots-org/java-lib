@@ -31,4 +31,5 @@
   <packaging>jar</packaging>
   
   <name>kjots.org Java Service Library - Common</name>
+  <description>kjots.org Java Service Library - Common</description>
 </project>

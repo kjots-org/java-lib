@@ -31,6 +31,7 @@
   <packaging>jar</packaging>
   
   <name>kjots.org Java Service Library - Resource Service</name>
+  <description>kjots.org Java Service Library - Resource Service</description>
   
   <dependencies>
     <dependency>
