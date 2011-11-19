@@ -1,6 +1,4 @@
-kjots.org Java Library - Copyright © 2011 Karl J. Ots <kjots@kjots.org>
+kjots.org Java Library
+Copyright © 2011 Karl J. Ots <kjots@kjots.org>
 
 Licensed under the Apache License, Version 2.0.
-
-Contains software from Apache Harmony [http://harmony.apache.org/]
- version 6.0M3, licensed under Apache License 2.0, modified for use with GWT.
