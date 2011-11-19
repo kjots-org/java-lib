@@ -26,7 +26,7 @@
   <packaging>pom</packaging>
   
   <name>kjots.org Java Library</name>
-  <description></description>
+  <description>kjots.org Java Library</description>
   <url>https://github.com/kjots-org/Java-Library</url>
   
   <licenses>
@@ -43,7 +43,7 @@
   </scm>
   
   <issueManagement>
-    <system>GutHub</system>
+    <system>GitHub</system>
     <url>https://github.com/kjots-org/Java-Library/issues</url>
   </issueManagement>
   
@@ -208,9 +208,9 @@
   </build>
   
   <modules>
-    <module>../org.kjots.java-lib.guice-support</module>
-    <module>../org.kjots.java-lib.service.common</module>
-    <module>../org.kjots.java-lib.service.resource</module>
-    <module>../org.kjots.java-lib.webapp.guice-support</module>
+    <module>guice-support</module>
+    <module>service.common</module>
+    <module>service.resource</module>
+    <module>webapp.guice-support</module>
   </modules>
 </project>

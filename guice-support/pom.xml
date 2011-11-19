@@ -23,13 +23,20 @@
     <groupId>org.kjots.java-lib</groupId>
     <artifactId>org.kjots.java-lib</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <relativePath>../org.kjots.java-lib/pom.xml</relativePath>
   </parent>
   
-  <artifactId>service.common</artifactId>
+  <artifactId>guice-support</artifactId>
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Java Service Library - Common</name>
-  <description>kjots.org Java Service Library - Common</description>
+  <name>kjots.org Java Library - Guice Support</name>
+  <description>kjots.org Java Library - Guice Support</description>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.google.inject</groupId>
+      <artifactId>guice</artifactId>
+      <version>${version.guice}</version>
+    </dependency>
+  </dependencies>
 </project>

@@ -23,32 +23,12 @@
     <groupId>org.kjots.java-lib</groupId>
     <artifactId>org.kjots.java-lib</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <relativePath>../org.kjots.java-lib/pom.xml</relativePath>
   </parent>
   
-  <artifactId>webapp.guice-support</artifactId>
+  <artifactId>service.common</artifactId>
   
   <packaging>jar</packaging>
   
-  <name>kjots.org Java Web Application Library - Guice Support</name>
-  <description>kjots.org Java Web Application Library - Guice Support</description>
-  
-  <dependencies>
-    <dependency>
-      <groupId>org.kjots.java-lib</groupId>
-      <artifactId>guice-support</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.inject.extensions</groupId> 
-      <artifactId>guice-servlet</artifactId>
-      <version>${version.guice}</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>servlet-api</artifactId>
-      <version>${version.servlet-api}</version>
-      <scope>provided</scope>
-    </dependency>
-  </dependencies>
+  <name>kjots.org Java Service Library - Common</name>
+  <description>kjots.org Java Service Library - Common</description>
 </project>
