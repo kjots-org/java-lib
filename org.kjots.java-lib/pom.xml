@@ -35,10 +35,28 @@
   </licenses>
   
   <scm>
-    <connection>scm:hg:http://kjots-org-java-lib.googlecode.com/hg/</connection>
-    <developerConnection>scm:hg:https://kjots-org-java-lib.googlecode.com/hg/</developerConnection>
-    <url>http://code.google.com/p/kjots-org-java-lib/source/browse/</url>
+    <connection>scm:git:https://github.com/kjots-org/Java-Library.git</connection>
+    <developerConnection>scm:git:https://github.com/kjots-org/Java-Library.git</developerConnection>
+    <url>https://github.com/kjots-org/Java-Library</url>
   </scm>
+  
+  <issueManagement>
+    <system>GutHub</system>
+    <url>https://github.com/kjots-org/Java-Library/issues</url>
+  </issueManagement>
+  
+  <distributionManagement>
+    <repository>
+      <id>kjots.org-releases</id>
+      <name>kjots.org Releases</name>
+      <url>${url.kjots.org-releases.deploy}</url>
+    </repository>
+    <snapshotRepository>
+      <id>kjots.org-snapshots</id>
+      <name>kjots.org Snapshots</name>
+      <url>${url.kjots.org-snapshots.deploy}</url>
+    </snapshotRepository>
+  </distributionManagement>
   
   <developers>
     <developer>
@@ -52,43 +70,6 @@
       </roles>
     </developer>
   </developers>
-  
-  <distributionManagement>
-    <downloadUrl>http://code.google.com/p/kjots-org-java-lib/</downloadUrl>
-    <repository>
-      <id>kjots.org-releases</id>
-      <name>kjots.org Releases</name>
-      <url>${url.kjots.org-releases.deploy}</url>
-    </repository>
-    <snapshotRepository>
-      <id>kjots.org-snapshots</id>
-      <name>kjots.org Snapshots</name>
-      <url>${url.kjots.org-snapshots.deploy}</url>
-    </snapshotRepository>
-  </distributionManagement>
-  
-  <issueManagement>
-    <system>Google Code</system>
-    <url>http://code.google.com/p/kjots-org-java-lib/issues/list</url>
-  </issueManagement>
-  
-  <repositories>
-    <repository>
-      <id>org.kjots.maven-releases</id>
-      <name>kjots.org Maven Releases</name>
-      <url>http://kjots-org-maven-repository.googlecode.com/svn/repositories/releases</url>
-    </repository>
-    <repository>
-      <id>org.kjots.maven-snapshots</id>
-      <name>kjots.org Maven Snapshots</name>
-      <url>http://kjots-org-maven-repository.googlecode.com/svn/repositories/snapshots/</url>
-    </repository>
-    <repository>
-      <id>org.kjots.maven-third-party</id>
-      <name>kjots.org Maven Third-Party</name>
-      <url>http://kjots-org-maven-repository.googlecode.com/svn/repositories/third-party/</url>
-    </repository>
-  </repositories>
   
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
