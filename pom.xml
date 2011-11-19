@@ -27,11 +27,11 @@
   
   <name>kjots.org Java Library</name>
   <description>kjots.org Java Library</description>
-  <url>https://github.com/kjots-org/Java-Library</url>
+  <url>http://dev.kjots.org/Java-Library/</url>
   
   <licenses>
     <license>
-      <name>Apache 2</name>
+      <name>The Apache Software License, Version 2.0</name>
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
@@ -39,7 +39,7 @@
   <scm>
     <connection>scm:git:https://github.com/kjots-org/Java-Library.git</connection>
     <developerConnection>scm:git:https://github.com/kjots-org/Java-Library.git</developerConnection>
-    <url>https://github.com/kjots-org/Java-Library</url>
+    <url>https://github.com/kjots-org/Java-Library/tree/master/</url>
   </scm>
   
   <issueManagement>
@@ -58,7 +58,17 @@
       <name>kjots.org Snapshots</name>
       <url>${url.kjots.org-snapshots.deploy}</url>
     </snapshotRepository>
+    <site>
+      <id>kjots.org-java-lib.site</id>
+      <name>kjots.org Java Library Site</name>
+      <url>file:///</url>
+    </site>
   </distributionManagement>
+  
+  <organization>
+    <name>kjots.org</name>
+    <url>http://dev.kjots.org/</url>
+  </organization>
   
   <developers>
     <developer>
@@ -90,6 +100,8 @@
     <version.plugin.maven-surefire>2.8</version.plugin.maven-surefire>
     <version.plugin.maven-source>2.1.2</version.plugin.maven-source>
     <version.plugin.maven-javadoc>2.7</version.plugin.maven-javadoc>
+    <version.plugin.maven-site>3.0</version.plugin.maven-site>
+    <version.plugin.maven-project-info-reports>2.4</version.plugin.maven-project-info-reports>
     
     <version.plugin.emma>1.0-alpha-3</version.plugin.emma>
   </properties>
@@ -169,6 +181,21 @@
         </plugin>
         
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>${version.plugin.maven-site}</version>
+          <configuration>
+            <stagingSiteURL>${url.kjots.org-java-lib.site.deploy}</stagingSiteURL>
+          </configuration>
+        </plugin>
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>${version.plugin.maven-project-info-reports}</version>
+        </plugin>
+        
+        <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>emma-maven-plugin</artifactId>
           <version>${version.plugin.emma}</version>
@@ -200,12 +227,43 @@
       </plugin>
       
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-site-plugin</artifactId>
+        <inherited>true</inherited>
+      </plugin>
+      
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>emma-maven-plugin</artifactId>
         <inherited>true</inherited>
       </plugin>
     </plugins>
   </build>
+  
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>${version.plugin.maven-project-info-reports}</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>index</report>
+              <report>dependencies</report>
+              <report>issue-tracking</report>
+              <report>plugin-management</report>
+              <report>license</report>
+              <report>plugins</report>
+              <report>summary</report>
+              <report>project-team</report>
+              <report>scm</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
   
   <modules>
     <module>guice-support</module>
