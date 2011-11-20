@@ -27,7 +27,7 @@
   
   <name>kjots.org Java Library</name>
   <description>kjots.org Java Library</description>
-  <url>http://kjots.org/Java-Library/</url>
+  <url>http://kjots.org/java-lib/</url>
   
   <licenses>
     <license>
@@ -37,14 +37,14 @@
   </licenses>
   
   <scm>
-    <connection>scm:git:https://github.com/kjots-org/Java-Library.git</connection>
-    <developerConnection>scm:git:https://github.com/kjots-org/Java-Library.git</developerConnection>
-    <url>https://github.com/kjots-org/Java-Library/tree/master/</url>
+    <connection>scm:git:https://github.com/kjots-org/java-lib.git</connection>
+    <developerConnection>scm:git:https://github.com/kjots-org/java-lib.git</developerConnection>
+    <url>https://github.com/kjots-org/java-lib/tree/master/</url>
   </scm>
   
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/kjots-org/Java-Library/issues</url>
+    <url>https://github.com/kjots-org/java-lib/issues</url>
   </issueManagement>
   
   <distributionManagement>
@@ -61,7 +61,7 @@
     <site>
       <id>kjots.org-java-lib.site</id>
       <name>kjots.org Java Library Site</name>
-      <url>http://kjots.org/Java-Library/</url>
+      <url>http://kjots.org/java-lib/</url>
     </site>
   </distributionManagement>
   
