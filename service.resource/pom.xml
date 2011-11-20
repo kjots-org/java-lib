@@ -34,9 +34,8 @@
   
   <dependencies>
     <dependency>
-      <groupId>org.kjots.java-lib</groupId>
+      <groupId>${project.groupId}</groupId>
       <artifactId>service.common</artifactId>
-      <version>${project.version}</version>
     </dependency>
   </dependencies>
 </project>

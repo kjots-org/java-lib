@@ -34,19 +34,16 @@
   
   <dependencies>
     <dependency>
-      <groupId>org.kjots.java-lib</groupId>
+      <groupId>${project.groupId}</groupId>
       <artifactId>guice-support</artifactId>
-      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>com.google.inject.extensions</groupId> 
       <artifactId>guice-servlet</artifactId>
-      <version>${version.guice}</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
-      <version>${version.servlet-api}</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
