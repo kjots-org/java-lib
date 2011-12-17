@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- EMMA v2.1.5320 (stable) report, generated Sat Dec 17 18:09:40 EST 2011 -->
+
+<report>
+  <stats>
+    <packages value="1"/>
+    <classes value="2"/>
+    <methods value="6"/>
+    <srcfiles value="2"/>
+    <srclines value="33"/>
+  </stats>
+  <data>
+    <all name="all classes">
+      <coverage type="class, %" value="100% (2/2)"/>
+      <coverage type="method, %" value="100% (6/6)"/>
+      <coverage type="block, %" value="86%  (147/171)"/>
+      <coverage type="line, %" value="76%  (25/33)"/>
+
+      <package name="org.kjots.lib.guice">
+        <coverage type="class, %" value="100% (2/2)"/>
+        <coverage type="method, %" value="100% (6/6)"/>
+        <coverage type="block, %" value="86%  (147/171)"/>
+        <coverage type="line, %" value="76%  (25/33)"/>
+
+        <srcfile name="GuiceModulesFactory.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (3/3)"/>
+          <coverage type="block, %" value="68%  (50/74)"/>
+          <coverage type="line, %" value="46%  (7/15)"/>
+
+          <class name="GuiceModulesFactory">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (3/3)"/>
+            <coverage type="block, %" value="68%  (50/74)"/>
+            <coverage type="line, %" value="46%  (7/15)"/>
+
+            <method name="createGuiceModule (String): Module">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="25%  (7/28)"/>
+              <coverage type="line, %" value="14%  (1/7)"/>
+            </method>
+            <method name="setGuiceModuleProperty (Module, String, String): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="93%  (40/43)"/>
+              <coverage type="line, %" value="71%  (5/7)"/>
+            </method>
+            <method name="GuiceModulesFactory (): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (3/3)"/>
+              <coverage type="line, %" value="100% (1/1)"/>
+            </method>
+          </class>
+        </srcfile>
+        <srcfile name="PropertiesGuiceModulesFactory.java">
+          <coverage type="class, %" value="100% (1/1)"/>
+          <coverage type="method, %" value="100% (3/3)"/>
+          <coverage type="block, %" value="100% (97/97)"/>
+          <coverage type="line, %" value="100% (18/18)"/>
+
+          <class name="PropertiesGuiceModulesFactory">
+            <coverage type="class, %" value="100% (1/1)"/>
+            <coverage type="method, %" value="100% (3/3)"/>
+            <coverage type="block, %" value="100% (97/97)"/>
+            <coverage type="line, %" value="100% (18/18)"/>
+
+            <method name="PropertiesGuiceModulesFactory (Properties): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (8/8)"/>
+              <coverage type="line, %" value="100% (3/3)"/>
+            </method>
+            <method name="getGuiceModules (): Collection">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (47/47)"/>
+              <coverage type="line, %" value="100% (8/8)"/>
+            </method>
+            <method name="setGuiceModuleProperties (Module): void">
+              <coverage type="method, %" value="100% (1/1)"/>
+              <coverage type="block, %" value="100% (42/42)"/>
+              <coverage type="line, %" value="100% (7/7)"/>
+            </method>
+          </class>
+        </srcfile>
+      </package>
+    </all>
+  </data>
+</report>
